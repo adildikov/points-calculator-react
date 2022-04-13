@@ -1,4 +1,4 @@
-import { Colors } from "src/styles/colors";
+import { Colors } from "@types";
 import styled from "styled-components";
 
 export const Root = styled.div`
