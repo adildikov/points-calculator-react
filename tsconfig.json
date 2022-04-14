@@ -19,6 +19,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseUrl": "./",
     "paths": {
       "src/*": ["src/*"],
       "@types": ["src/types"],
@@ -40,7 +41,5 @@
       "stubs/*": ["src/stubs/*"]
     }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "tools", "./global.d.ts"],
 }
