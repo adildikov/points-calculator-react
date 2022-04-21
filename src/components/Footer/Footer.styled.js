@@ -5,15 +5,23 @@ import Colors from "@styles/colors"
 
 export const Root = styled.div`
   width: 100%;
-  height: 404px;
   background: url(${bgBlack});
   background-size: cover;
   padding: 50px 0 50px 0;
+
+  ${media.desktop`
+    height: 404px;
+  `}
 `;
 
 export const MainBlock = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+
+  ${media.desktop`
+    flex-direction: row;
+  `}
 `;
 
 export const Logo = styled.img`
@@ -23,16 +31,29 @@ export const Logo = styled.img`
 
 export const LogoInfoWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 201px;
+  justify-content: center;
+  margin-bottom: 50px;
+  
+  ${media.desktop`
+    justify-content: normal;
+    flex-direction: column;
+    width: 201px;
+    margin-bottom: 0;
+  `}
 `;
 
 export const InfoWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 58px;
-  color: ${Colors.white}
+  color: ${Colors.white};
+  justify-content: center;
+  margin-left: 90px;
+
+  ${media.desktop`
+    margin: 58px 0 0 0;
+    justify-content: normal;
+  `}
 `;
 
 export const Phone = styled.div`
@@ -51,7 +72,11 @@ export const Text = styled.div`
 
 export const LinksWrapper = styled.div`
   display: flex;
-  margin-left: 239px;
+  justify-content: center;
+  ${media.desktop`
+    justify-content: normal;
+    margin-left: 239px;
+  `}
 `;
 
 export const LinksCol = styled.div`
