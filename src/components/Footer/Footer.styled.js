@@ -30,10 +30,18 @@ export const Logo = styled.img`
 `;
 
 export const LogoInfoWrapper = styled.div`
+  width: 100%;    
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 50px;
+  align-items: center;
   
+  ${media.tablet`
+    margin-bottom: 50px;
+    flex-direction: row;
+    align-items: normal;
+  `}
+
   ${media.desktop`
     justify-content: normal;
     flex-direction: column;
@@ -48,7 +56,12 @@ export const InfoWrapper = styled.div`
   flex-direction: column;
   color: ${Colors.white};
   justify-content: center;
-  margin-left: 90px;
+  margin-top: 30px;
+  width: 201px;
+
+  ${media.tablet`
+    margin: 0 0 0 90px;
+  `}
 
   ${media.desktop`
     margin: 58px 0 0 0;
@@ -72,7 +85,15 @@ export const Text = styled.div`
 
 export const LinksWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  ${media.tablet`
+    flex-direction: row;
+    align-items: normal;
+    justify-content: center;
+  `}
+
   ${media.desktop`
     justify-content: normal;
     margin-left: 239px;
@@ -82,8 +103,11 @@ export const LinksWrapper = styled.div`
 export const LinksCol = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 76px;
-  width: 210px;
+  
+  ${media.tablet`
+    margin-right: 76px;
+    width: 210px;
+  `}
 
   &:last-child {
     margin-right: 0px;
@@ -92,11 +116,17 @@ export const LinksCol = styled.div`
 
 export const LinksHeader = styled.div`
   width: 100%;
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-family: MontserratBold;
   font-size: 20px;
   line-height: 24px;
   color: ${Colors.white};
+  text-align: center;
+
+  ${media.tablet`
+    margin: 0 0 0 30px;
+    text-align: left;
+  `}
 `;
 
 export const LinkItem = styled.div`
@@ -106,6 +136,11 @@ export const LinkItem = styled.div`
   line-height: 20px;
   color: ${Colors.white};
   margin-bottom: 20px;
+  text-align: center;
+
+  ${media.tablet`
+    text-align: left;
+  `}
 `;
 
 export const LastBlock = styled.div`
