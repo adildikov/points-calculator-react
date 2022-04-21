@@ -10,16 +10,17 @@ export const Root = styled.div`
 `;
 
 export const Content = styled.div`
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
-  margin: 0 22px 0 22px;
+  padding: 0 22px 0 22px;
 
   ${media.desktop`
-    margin: 0 120px 0 120px;
+    padding: 0 120px 0 120px;
   `}
   ${media.bigDesktop`
-    margin: 0 305px 0 305px;
+    padding: 0 305px 0 305px;
   `}
 `;
 
@@ -31,8 +32,12 @@ export const Logo = styled.img`
 export const Burger = styled.img`
   width: 23px;
   height: 17px;
-  margin-left: 86px;
+  margin: 0 0 0 auto;
   cursor: pointer;
+
+  ${media.tablet`
+    margin: 0 0 0 86px;
+  `}
 `;
 
 export const InfoWrapper = styled.div`

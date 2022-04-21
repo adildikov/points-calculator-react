@@ -124,7 +124,7 @@ export const LinksHeader = styled.div`
   text-align: center;
 
   ${media.tablet`
-    margin: 0 0 0 30px;
+    margin: 0 0 30px 0;
     text-align: left;
   `}
 `;
