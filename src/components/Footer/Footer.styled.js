@@ -2,6 +2,7 @@ import styled from "styled-components";
 import bgBlack from "@images/bg_image_dark.png";
 import { media } from "@styles/media";
 import Colors from "@styles/colors"
+import AppLink from "@components/AppLink"
 
 export const Root = styled.div`
   width: 100%;
@@ -56,11 +57,13 @@ export const InfoWrapper = styled.div`
   flex-direction: column;
   color: ${Colors.white};
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
   width: 201px;
 
   ${media.tablet`
     margin: 0 0 0 90px;
+    align-items: normal;
   `}
 
   ${media.desktop`
@@ -69,7 +72,7 @@ export const InfoWrapper = styled.div`
   `}
 `;
 
-export const Phone = styled.div`
+export const Phone = styled(AppLink)`
   text-align: center;
   font-family: MontserratBold;
   font-size: 20px;
@@ -81,6 +84,7 @@ export const Text = styled.div`
   font-size: 12px;
   line-height: 15px;
   margin-top: 5px;
+  cursor: default;
 `;
 
 export const LinksWrapper = styled.div`
@@ -122,6 +126,7 @@ export const LinksHeader = styled.div`
   line-height: 24px;
   color: ${Colors.white};
   text-align: center;
+  cursor: default;
 
   ${media.tablet`
     margin: 0 0 30px 0;

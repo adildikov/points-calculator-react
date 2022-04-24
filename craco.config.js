@@ -10,6 +10,7 @@ module.exports = {
       '@images': resolvePath('./src/assets/images'),
       '@styles': resolvePath('./src/styles'),
       '@hooks': resolvePath('./src/hooks'),
+      '@utils': resolvePath('./src/utils'),
     },
   },
 };
