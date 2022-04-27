@@ -3,6 +3,8 @@ import { headerHeight } from "@styles/sizes"
 import Colors from '@styles/colors';
 import bgLight from "@images/bg_image_light.png";
 import { media } from "@styles/media";
+import { Form } from 'formik';
+
 
 export const Root = styled.div`
   position: relative;
@@ -16,13 +18,13 @@ export const Root = styled.div`
 export const Content = styled.div`
   position: relative;
   width: 100%;
-  padding: 30px 22px 0 22px;
+  padding: 30px 22px 50px 22px;
 
   ${media.desktop`
-    padding: 60px 120px 0 120px;
+    padding: 60px 120px 50px 120px;
   `}
   ${media.bigDesktop`
-    padding: 60px 305px 0 305px;
+    padding: 60px 305px 50px 305px;
   `}
 `;
 
@@ -46,6 +48,12 @@ export const SubTitle = styled.div`
   `}
 `;
 
-export const InputsBlock = styled.div`
-  margin-top: 40px;
+export const InputsBlock = styled(Form)`
+    position: relative;
+    margin-top: 40px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 224px);
+    justify-content: center;
+    grid-gap: 20px;
 `;
