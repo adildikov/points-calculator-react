@@ -174,6 +174,9 @@ const MainPage = ({
                   </PopperBtn>
                   <PopperBtn onClick={() => setGto("bronze")}>Бронза</PopperBtn>
                 </Popper>
+                <S.OtherBtnBody ml={26} width={240}>
+                  <S.Text>Дополнительно</S.Text>
+                </S.OtherBtnBody>
               </S.TogglesBlock>
             </>
           )}
