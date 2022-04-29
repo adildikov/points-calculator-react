@@ -4,6 +4,7 @@ import Colors from '@styles/colors';
 import bgLight from "@images/bg_image_light.png";
 import { media } from "@styles/media";
 import { Form } from 'formik';
+import { margin } from 'styled-system';
 
 
 export const Root = styled.div`
@@ -40,7 +41,7 @@ export const Title = styled.div`
 
 export const SubTitle = styled.div`
   font-family: MontserratRegular;
-  margin-top: 20px;
+  ${margin};
 
   ${media.desktop`
     font-size: 24px;
@@ -56,4 +57,11 @@ export const InputsBlock = styled(Form)`
     grid-template-columns: repeat(auto-fill, 224px);
     justify-content: center;
     grid-gap: 20px;
+`;
+
+export const TogglesBlock = styled.div`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
 `;
