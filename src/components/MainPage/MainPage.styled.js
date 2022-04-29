@@ -96,3 +96,29 @@ export const Text = styled.div`
   text-align: center;
   color: ${Colors.dark};
 `;
+
+export const SubmitBtn = styled.button`
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${Colors.blue};
+  color: ${Colors.white};
+  font-size: 24px;
+  line-height: 29px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1));
+
+  &:hover {
+    background: ${Colors.lightBlue};
+  }
+
+  ${margin};
+
+  ${media.desktop`
+    width: 730px;
+  `}
+`;

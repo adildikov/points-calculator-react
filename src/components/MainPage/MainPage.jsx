@@ -178,6 +178,9 @@ const MainPage = ({
                   <S.Text>Дополнительно</S.Text>
                 </S.OtherBtnBody>
               </S.TogglesBlock>
+              <S.SubmitBtn type="submit" mt={60}>
+                Рассчитать свои шансы
+              </S.SubmitBtn>
             </>
           )}
         </Formik>
