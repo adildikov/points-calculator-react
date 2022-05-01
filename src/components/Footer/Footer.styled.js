@@ -163,10 +163,15 @@ export const Divider = styled.div`
 `;
 
 export const SubText = styled.div`
+  max-width: 370px;
   margin-top: 30px;
   font-family: MontserratRegular;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: ${Colors.white};
+
+  ${media.tablet`
+    max-width: 100%;
+  `}
 `;
