@@ -4,8 +4,8 @@ import * as S from "./MainPage.styled";
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
 import Toggle from "@components/Toggle";
-import Popper from "../Popper/Popper";
-import { PopperBtn } from "../Popper/Popper.styled";
+import Popper from "@components/Popper/Popper";
+import { PopperBtn } from "@components/Popper/Popper.styled";
 import useWindowResize from "@hooks/useWindowResize";
 import { Viewport } from "@styles/media";
 

@@ -1,8 +1,9 @@
 import React, { useCallback, useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Header from "../Header";
-import Footer from "../Footer";
-import MainPage from "../MainPage";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
+import MainPage from "@pages/MainPage";
+import ResultsPage from "@pages/ResultsPage";
 import * as S from "./App.styled";
 import { AnimatePresence } from "framer-motion";
 import useToggle from "@hooks/useToggle";
@@ -41,6 +42,7 @@ const App = () => {
             <Switch>
               <Route exact path="/" component={MainPage} />
               <Route exact path="/home" component={MainPage} />
+              <Route exact path="/results" component={ResultsPage} />
             </Switch>
           </div>
         </div>

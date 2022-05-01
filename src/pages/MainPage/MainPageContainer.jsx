@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useActionWithPayload } from "@hooks/useAction";
-import useToggle from "../../hooks/useToggle";
+import useToggle from "@hooks/useToggle";
 import MainPage from "./MainPage";
 import { actions } from "@models/form";
 
