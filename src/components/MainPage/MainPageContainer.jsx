@@ -16,6 +16,10 @@ const MainPageContainer = () => {
   const setStudyFormAction = useActionWithPayload(actions.setStudyForm);
   const setOther = useActionWithPayload(actions.setOther);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") window.scrollTo(0, 0);
+  }, []);
+
   const handleSetSubjects = useCallback(
     (values) => {
       setSubjects(values);
