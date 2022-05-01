@@ -10,6 +10,7 @@ export const Root = styled.div`
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 14px 20px;
+  margin-bottom: 15px;
   ${margin};
   ${width};
 `;

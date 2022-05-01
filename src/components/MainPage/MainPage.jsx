@@ -1,11 +1,13 @@
 import React from "react";
 import SubjectInput from "@components/SubjectInput";
 import * as S from "./MainPage.styled";
-import { Formik } from "formik";
+import { Form, Formik } from "formik";
 import * as Yup from "yup";
 import Toggle from "@components/Toggle";
 import Popper from "../Popper/Popper";
 import { PopperBtn } from "../Popper/Popper.styled";
+import useWindowResize from "@hooks/useWindowResize";
+import { Viewport } from "@styles/media";
 
 const MainPage = ({
   studyForm,
@@ -20,7 +22,10 @@ const MainPage = ({
   setVolunteering,
   gto,
   setGto,
+  onSetSubjects,
 }) => {
+  const { width: windowWidth } = useWindowResize();
+  const isMobile = windowWidth <= Viewport.mobile;
   return (
     <S.Root>
       <S.Content>
@@ -29,49 +34,50 @@ const MainPage = ({
           Узнайте свои шансы поступить в Тверской государственный университет
         </S.SubTitle>
         <Formik
-          onSubmit={() => {}}
+          onSubmit={onSetSubjects}
           initialValues={{
-            rus: null,
-            math: null,
-            ikt: null,
-            social: null,
-            eng: null,
-            bio: null,
-            geo: null,
-            chem: null,
-            phys: null,
-            litr: null,
-            hist: null,
+            rus: 0,
+            math: 0,
+            ikt: 0,
+            social: 0,
+            eng: 0,
+            bio: 0,
+            geo: 0,
+            chem: 0,
+            phys: 0,
+            litr: 0,
+            hist: 0,
           }}
           validationSchema={Yup.object({
-            rus: Yup.number().required("Required"),
-            math: Yup.number().required("Required"),
-            ikt: Yup.number(),
-            social: Yup.number(),
-            eng: Yup.number(),
-            bio: Yup.number(),
-            geo: Yup.number(),
-            chem: Yup.number(),
-            phys: Yup.number(),
-            litr: Yup.number(),
-            hist: Yup.number(),
+            rus: Yup.number().required().min(1).max(100),
+            math: Yup.number().required().min(1).max(100),
+            ikt: Yup.number().max(100),
+            social: Yup.number().max(100),
+            eng: Yup.number().max(100),
+            bio: Yup.number().max(100),
+            geo: Yup.number().max(100),
+            chem: Yup.number().max(100),
+            phys: Yup.number().max(100),
+            litr: Yup.number().max(100),
+            hist: Yup.number().max(100),
           })}
         >
-          {({ values, errors, isValid, handleBlur, handleChange }) => (
-            <>
+          {({ values, errors, isValid, handleChange }) => (
+            <Form>
               <S.InputsBlock>
-                {console.info(errors)}
                 <SubjectInput
                   name="rus"
                   title="Русский язык"
                   value={values.rus}
                   onChange={handleChange}
+                  error={errors.rus}
                 />
                 <SubjectInput
                   title="Математика"
                   value={values.math}
                   name="math"
                   onChange={handleChange}
+                  error={errors.math}
                 />
                 <SubjectInput
                   title="Обществознание"
@@ -135,20 +141,20 @@ const MainPage = ({
                   width={155}
                   isActive={studyForm}
                   setActive={setStudyForm}
+                  mr={isMobile ? 0 : 26}
                 />
                 <Toggle
                   text="Заочная"
                   width={173}
                   isActive={studyForm2}
                   setActive={setStudyForm2}
-                  ml={26}
+                  mr={isMobile ? 0 : 26}
                 />
                 <Toggle
                   text="Очно-заочная"
                   width={228}
                   isActive={studyForm3}
                   setActive={setStudyForm3}
-                  ml={26}
                 />
               </S.TogglesBlock>
               <S.SubTitle mt={30}>Укажите индивидуальные достижения</S.SubTitle>
@@ -158,15 +164,16 @@ const MainPage = ({
                   width={245}
                   isActive={medal}
                   setActive={setMedal}
+                  mr={isMobile ? 0 : 26}
                 />
                 <Toggle
                   text="Волонтерство"
                   width={228}
                   isActive={volunteering}
                   setActive={setVolunteering}
-                  ml={26}
+                  mr={isMobile ? 0 : 26}
                 />
-                <Popper ml={26} value={gto}>
+                <Popper value={gto}>
                   <PopperBtn onClick={() => setGto(null)}>–––––––</PopperBtn>
                   <PopperBtn onClick={() => setGto("gold")}>Золото</PopperBtn>
                   <PopperBtn onClick={() => setGto("silver")}>
@@ -174,14 +181,15 @@ const MainPage = ({
                   </PopperBtn>
                   <PopperBtn onClick={() => setGto("bronze")}>Бронза</PopperBtn>
                 </Popper>
-                <S.OtherBtnBody ml={26} width={240}>
+                {/* <S.OtherBtnBody ml={26} width={240}>
                   <S.Text>Дополнительно</S.Text>
-                </S.OtherBtnBody>
+                </S.OtherBtnBody> */}
               </S.TogglesBlock>
-              <S.SubmitBtn type="submit" mt={60}>
+              <S.SubmitBtn type="submit" disabled={!isValid} mt={60}>
+                {" "}
                 Рассчитать свои шансы
               </S.SubmitBtn>
-            </>
+            </Form>
           )}
         </Formik>
       </S.Content>

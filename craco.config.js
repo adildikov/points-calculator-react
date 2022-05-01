@@ -11,6 +11,7 @@ module.exports = {
       '@styles': resolvePath('./src/styles'),
       '@hooks': resolvePath('./src/hooks'),
       '@utils': resolvePath('./src/utils'),
+      '@models': resolvePath('./src/models'),
     },
   },
 };

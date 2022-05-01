@@ -3,7 +3,6 @@ import { headerHeight } from "@styles/sizes"
 import Colors from '@styles/colors';
 import bgLight from "@images/bg_image_light.png";
 import { media } from "@styles/media";
-import { Form } from 'formik';
 import { margin } from 'styled-system';
 import { width } from 'styled-system';
 import otherBtn from '@images/otherBtn.svg'
@@ -50,7 +49,7 @@ export const SubTitle = styled.div`
   `}
 `;
 
-export const InputsBlock = styled(Form)`
+export const InputsBlock = styled.div`
     position: relative;
     margin-top: 40px;
     align-items: start;
@@ -67,8 +66,15 @@ export const InputsBlock = styled(Form)`
 export const TogglesBlock = styled.div`
   position: relative;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 20px;
+  align-items: center;
+
+  ${media.tablet`
+    flex-direction: row;
+    align-items: normal;
+  `}
 `;
 
 export const OtherBtnBody = styled.div`
@@ -115,6 +121,15 @@ export const SubmitBtn = styled.button`
   &:hover {
     background: ${Colors.lightBlue};
   }
+
+  ${({disabled}) => disabled && `
+    background: ${Colors.alabaster};
+    border: 1px solid ${Colors.grey};
+    cursor: not-allowed;
+    &:hover {
+      background: ${Colors.alabaster};
+    }
+  `}
 
   ${margin};
 

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { useActionWithPayload } from "@hooks/useAction";
 import useToggle from "../../hooks/useToggle";
 import MainPage from "./MainPage";
+import { actions } from "@models/form";
 
 const MainPageContainer = () => {
   const [studyForm, setStudyForm] = useToggle(false);
@@ -9,6 +11,30 @@ const MainPageContainer = () => {
   const [medal, setMedal] = useToggle(false);
   const [volunteering, setVolunteering] = useToggle(false);
   const [gto, setGto] = useState(null);
+
+  const setSubjects = useActionWithPayload(actions.setSubjects);
+  const setStudyFormAction = useActionWithPayload(actions.setStudyForm);
+  const setOther = useActionWithPayload(actions.setOther);
+
+  const handleSetSubjects = useCallback(
+    (values) => {
+      setSubjects(values);
+    },
+    [setSubjects]
+  );
+
+  useEffect(() => {
+    setStudyFormAction({
+      fullTime: studyForm,
+      partTime: studyForm2,
+      fullPartTime: studyForm3,
+    });
+  }, [studyForm, studyForm2, studyForm3, setStudyFormAction]);
+
+  useEffect(() => {
+    setOther({ medal, volunteering, gto });
+  }, [medal, volunteering, gto, setOther]);
+
   return (
     <MainPage
       studyForm={studyForm}
@@ -23,6 +49,7 @@ const MainPageContainer = () => {
       setVolunteering={setVolunteering}
       gto={gto}
       setGto={setGto}
+      onSetSubjects={handleSetSubjects}
     />
   );
 };

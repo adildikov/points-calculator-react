@@ -10,6 +10,11 @@ export const Root = styled.div`
   border-radius: 16px;
   padding: 15px 20px 0 20px;
 
+  ${({error}) => error && `
+    background: ${Colors.redErrorBg};
+    border: 1px solid ${Colors.redError};
+  `}
+
   ${media.tablet`
     width: 224px;
   `}
@@ -38,6 +43,15 @@ export const Input = styled.input`
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  ${({error}) => error && `
+    background: ${Colors.redErrorBg};
+    border: 1px solid ${Colors.redError};
+  `}
 
   &::placeholder {
     font-size: 14px;

@@ -47,7 +47,7 @@ const Popper = ({ children, value, ...rest }) => {
   return (
     <S.Root onClick={toggleVisibility} {...rest}>
       <S.Text>ГТО</S.Text>
-      <S.Status>{status[value]}</S.Status>
+      <S.Status hasValue={!!value}>{status[value]}</S.Status>
       <S.PopUpContainer
         style={styles.offset}
         visible={visible}

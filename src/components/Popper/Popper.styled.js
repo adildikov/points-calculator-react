@@ -26,14 +26,24 @@ export const Text = styled.div`
 `;
 
 export const Status = styled.div`
+  display: flex;
   width: 80px;
   height: 20px;
+  justify-content: center;
+  align-items: center;
   margin-left: 19px;
   font-size: 13px;
   line-height: 20px;  
   text-align: center;
-  color: ${Colors.grey};
-  background: ${Colors.lightgray};
+  ${({hasValue}) => 
+  hasValue ? `
+    color: ${Colors.dark};
+    background: ${Colors.white};
+    border: 1px solid ${Colors.grey};
+  `: `
+    color: ${Colors.grey};
+    background: ${Colors.lightgray};
+  `}
   border-radius: 5px;
 `;
 
