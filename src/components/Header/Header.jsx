@@ -5,11 +5,11 @@ import useWindowResize from "@hooks/useWindowResize";
 import { Viewport } from "@styles/media";
 import * as S from "./Header.styled";
 
-const Header = () => {
+const Header = ({ onMenuClick, withBorder = false }) => {
   const { width: windowWidth } = useWindowResize();
   const isMobile = windowWidth <= Viewport.mobile;
   return (
-    <S.Root>
+    <S.Root withBorder={withBorder}>
       <S.Content>
         <S.Logo src={logoColor} />
         {!isMobile && (
@@ -18,7 +18,7 @@ const Header = () => {
             <S.Text>Приёмная комиссия</S.Text>
           </S.InfoWrapper>
         )}
-        <S.Burger src={navBurger} />
+        <S.Burger src={navBurger} onClick={onMenuClick} />
       </S.Content>
     </S.Root>
   );

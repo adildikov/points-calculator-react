@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { headerHeight } from "@styles/sizes"
 import { media } from "@styles/media";
+import Colors from "@styles/colors";
 
 export const Root = styled.div`
   width: 100%;
   height: ${headerHeight}px;
   display: flex;
   align-items: center;
+  ${({withBorder}) => withBorder && `border-bottom: 1px solid ${Colors.alabaster}`};
 `;
 
 export const Content = styled.div`
