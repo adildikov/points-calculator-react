@@ -5,12 +5,13 @@ import { headerHeight } from "@styles/sizes";
 import { media } from "@styles/media";
 import { size } from "polished";
 import Colors from "@styles/colors";
+import { margin } from "styled-system";
 
 const position = css`
   position: fixed;
   top: 0;
   left: 0;
-  ${size(`calc(230px + ${headerHeight}px)`, "100%")};
+  ${size(`calc(270px + ${headerHeight}px)`, "100%")};
 `;
 
 export const Root = styled(motion.div)`
@@ -55,13 +56,26 @@ const NavItem = styled(motion.li)`
   width: fit-content;
 `;
 
-export const SecondaryNavItem = styled(NavItem)`
+export const MainNavItem = styled(NavItem)`
   font-family: MontserratSemiBold;
   font-size: 22px;
   line-height: 26px;
   color: ${Colors.dark};
 
   margin-bottom: 14px;
+
+  &:hover {
+    color: ${Colors.blue};
+  }
+`;
+
+export const SecondaryNavItem = styled(NavItem)`
+  font-family: MontserratRegular;
+  font-size: 18px;
+  line-height: 22px;
+  color: ${Colors.dark};
+
+  margin-bottom: 12px;
 
   &:hover {
     color: ${Colors.blue};
@@ -100,4 +114,11 @@ export const NavItems = styled.ul`
   ${media.bigDesktop`
     right: 302px;
   `}
+`;
+
+export const SecondaryItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  ${margin};
 `;

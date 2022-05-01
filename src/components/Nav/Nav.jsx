@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import Header from "../Header";
+import AppLink from "@components/AppLink";
 
 import * as S from "./Nav.styled";
 
 import { items } from "./items";
+import { secondaryItems } from "./items";
 
 const commonTransitionSettings = {
   ease: "easeIn",
@@ -14,12 +16,19 @@ const commonTransitionSettings = {
 const Nav = ({ onClose }) => {
   const rootAnimation = useAnimation();
   const itemAnimation = useAnimation();
+  const secondaryItemAnimation = useAnimation();
 
   useEffect(() => {
     const animate = async () => {
       await rootAnimation.start({ opacity: 1 });
 
       await itemAnimation.start((i) => ({
+        opacity: 1,
+        y: 0,
+        transition: { delay: i * 0.15 },
+      }));
+
+      await secondaryItemAnimation.start((i) => ({
         opacity: 1,
         y: 0,
         transition: { delay: i * 0.15 },
@@ -56,17 +65,31 @@ const Nav = ({ onClose }) => {
       </S.Cross>
       <S.NavItems>
         {items.map(({ title, to }, i) => (
-          <a href={to} key={title}>
-            <S.SecondaryNavItem
+          <AppLink to={to} key={title}>
+            <S.MainNavItem
               custom={i}
               initial={{ opacity: 0, y: -25 }}
               animate={itemAnimation}
               onClick={onClose}
             >
               {title}
-            </S.SecondaryNavItem>
-          </a>
+            </S.MainNavItem>
+          </AppLink>
         ))}
+        <S.SecondaryItems mt={20}>
+          {secondaryItems.map(({ title, to }, i) => (
+            <AppLink to={to} key={title}>
+              <S.SecondaryNavItem
+                custom={i}
+                initial={{ opacity: 0, y: -25 }}
+                animate={secondaryItemAnimation}
+                onClick={onClose}
+              >
+                {title}
+              </S.SecondaryNavItem>
+            </AppLink>
+          ))}
+        </S.SecondaryItems>
       </S.NavItems>
     </S.Root>
   );

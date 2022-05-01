@@ -4,15 +4,21 @@ export const items = [
     title: "Главная",
   },
   {
-    to: "/constructor",
-    title: "Создать свой дизайн",
+    to: "/results",
+    title: "Результаты",
+  },
+];
+export const secondaryItems = [
+  {
+    to: "https://tversu.ru/",
+    title: "Сайт ТвГУ",
   },
   {
-    to: "/#examples",
-    title: "Примеры работ",
+    to: "https://tversu.ru/pages/2107",
+    title: "Контакты",
   },
   {
-    to: "/#feedback",
-    title: "Отзывы",
+    to: "https://priem.tversu.ru/",
+    title: "Приемная комиссия",
   },
 ];
