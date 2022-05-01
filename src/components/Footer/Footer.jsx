@@ -8,7 +8,9 @@ const Footer = () => {
     <S.Root>
       <S.MainBlock>
         <S.LogoInfoWrapper>
-          <S.Logo src={logoWhite} />
+          <AppLink to={"/"}>
+            <S.Logo src={logoWhite} />
+          </AppLink>
           <S.InfoWrapper>
             <S.Phone to="tel:+7 (4822) 34-24-52">+7 (4822) 34-24-52</S.Phone>
             <S.Text>170100, г. Тверь, ул. Желябова, 33</S.Text>

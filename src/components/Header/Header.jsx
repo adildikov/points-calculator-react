@@ -4,6 +4,7 @@ import navBurger from "@images/navBurger.svg";
 import useWindowResize from "@hooks/useWindowResize";
 import { Viewport } from "@styles/media";
 import * as S from "./Header.styled";
+import AppLink from "@components/AppLink";
 
 const Header = ({ onMenuClick, withBorder = false }) => {
   const { width: windowWidth } = useWindowResize();
@@ -11,7 +12,9 @@ const Header = ({ onMenuClick, withBorder = false }) => {
   return (
     <S.Root withBorder={withBorder}>
       <S.Content>
-        <S.Logo src={logoColor} />
+        <AppLink to={"/"}>
+          <S.Logo src={logoColor} />
+        </AppLink>
         {!isMobile && (
           <S.InfoWrapper>
             <S.Phone>+7 (4822) 32-15-14</S.Phone>
