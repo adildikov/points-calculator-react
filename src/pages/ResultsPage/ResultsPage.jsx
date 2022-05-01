@@ -4,7 +4,9 @@ import * as S from "./ResultsPage.styled";
 const ResultsPage = () => {
   return (
     <S.Root>
-      <h2>asf</h2>
+      <S.Content>
+        <h2>asf</h2>
+      </S.Content>
     </S.Root>
   );
 };
