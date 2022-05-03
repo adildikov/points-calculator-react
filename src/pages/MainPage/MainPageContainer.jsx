@@ -3,8 +3,11 @@ import { useActionWithPayload } from "@hooks/useAction";
 import useToggle from "@hooks/useToggle";
 import MainPage from "./MainPage";
 import { actions } from "@models/form";
+import sortAndConvertSubjectsValues from "@utils/sortAndConvertSubjectsValues";
+import { useHistory } from "react-router-dom";
 
 const MainPageContainer = () => {
+  const history = useHistory();
   const [studyForm, setStudyForm] = useToggle(false);
   const [studyForm2, setStudyForm2] = useToggle(false);
   const [studyForm3, setStudyForm3] = useToggle(false);
@@ -22,9 +25,10 @@ const MainPageContainer = () => {
 
   const handleSetSubjects = useCallback(
     (values) => {
-      setSubjects(values);
+      setSubjects(sortAndConvertSubjectsValues(values));
+      history.push("/results");
     },
-    [setSubjects]
+    [setSubjects, history]
   );
 
   useEffect(() => {

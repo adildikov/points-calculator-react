@@ -8,7 +8,7 @@ export const Root = styled.div`
   position: relative;
   width: 100%;
   min-height: calc(100vh - ${headerHeight}px);
-  background: url(${bgLight});
+  background: ${Colors.white};
   background-size: cover;
   color: ${Colors.dark};
 `;
@@ -16,12 +16,12 @@ export const Root = styled.div`
 export const Content = styled.div`
   position: relative;
   width: 100%;
-  padding: 30px 22px 50px 22px;
+  padding: 0px 22px 50px 22px;
 
   ${media.desktop`
-    padding: 60px 120px 50px 120px;
+    padding: 0px 120px 50px 120px;
   `}
   ${media.bigDesktop`
-    padding: 60px 305px 50px 305px;
+    padding: 0px 305px 50px 305px;
   `}
 `;

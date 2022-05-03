@@ -1,19 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  subjects: {
-    rus: null,
-    math: null,
-    ikt: null,
-    social: null,
-    eng: null,
-    bio: null,
-    geo: null,
-    chem: null,
-    phys: null,
-    litr: null,
-    hist: null,
-  },
+  subjects: [],
   studyForm: {
     fullTime: false,
     partTime: false,
