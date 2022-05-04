@@ -22,7 +22,7 @@ export const Content = styled.div`
     padding: 0 120px 0 120px;
   `}
   ${media.bigDesktop`
-    padding: 0 305px 0 305px;
+    padding: 0 200px 0 200px;
   `}
 `;
 

@@ -25,7 +25,7 @@ export const Content = styled.div`
     padding: 60px 120px 50px 120px;
   `}
   ${media.bigDesktop`
-    padding: 60px 305px 50px 305px;
+    padding: 60px 200px 50px 200px;
   `}
 `;
 

@@ -12,6 +12,8 @@ const ResultsPageContainer = () => {
     individual: 0,
     examsScore: 0,
   });
+  const [search, setSearch] = useState("");
+  const [filter, setFilter] = useState("title");
 
   useEffect(() => {
     const examsScore = subjects.reduce((sum, subj) => sum + +subj.score, 0);
@@ -27,7 +29,16 @@ const ResultsPageContainer = () => {
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   }, []);
 
-  return <ResultsPage exams={subjects} score={score} />;
+  return (
+    <ResultsPage
+      exams={subjects}
+      score={score}
+      search={search}
+      setSearch={setSearch}
+      filter={filter}
+      setFilter={setFilter}
+    />
+  );
 };
 
 export default ResultsPageContainer;
