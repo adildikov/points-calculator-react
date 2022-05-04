@@ -43,7 +43,7 @@ const customStyles = {
     display: "block",
     width: "100%",
     height: "64px",
-    borderRadius: "50px",
+    borderRadius: "16px",
     padding: "22px 45px 17px 35px",
     background:
       // eslint-disable-next-line no-nested-ternary
