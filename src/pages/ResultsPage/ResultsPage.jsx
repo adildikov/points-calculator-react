@@ -5,6 +5,7 @@ import SearchBar from "@components/SearchBar";
 import * as Yup from "yup";
 import { Field, Formik } from "formik";
 import SelectField from "@components/CustomDropdown";
+import AppLink from "@components/AppLink";
 
 const options = [
   { value: "title", label: "Title " },
@@ -63,8 +64,9 @@ const ResultsPage = ({ exams, score, search, setSearch, onSelectChange }) => {
               Для корректной работы необходимо заполнить форму на главной
               странице
             </S.EmptySubTitle>
-            <AppLink
-            <S.Btn>На главную</S.Btn>
+            <AppLink to="/">
+              <S.Btn>На главную</S.Btn>
+            </AppLink>
           </S.ContentEmpty>
         </S.EmptyPage>
       )}
