@@ -1,6 +1,5 @@
 import Colors from '@styles/colors';
 import styled from 'styled-components';
-import { media } from '@styles/media';
 import { margin, maxWidth } from 'styled-system';
 
 export const SearchBar = styled.div`
@@ -8,10 +7,6 @@ export const SearchBar = styled.div`
   width: 100%;
   height: 52px;
   ${margin};
-
-  ${media.desktop`
-    max-width: 1010px;
-  `}
   ${maxWidth};
 `;
 

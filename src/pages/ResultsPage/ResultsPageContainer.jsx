@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useSelector } from "react-redux";
 import ResultsPage from "./ResultsPage";
 import { subjectsaSelector, otherSelector } from "@models/form/selectors";
@@ -29,14 +29,20 @@ const ResultsPageContainer = () => {
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   }, []);
 
+  const handleSelectChange = useCallback(
+    (value) => {
+      setFilter(value);
+    },
+    [setFilter]
+  );
+
   return (
     <ResultsPage
       exams={subjects}
       score={score}
       search={search}
       setSearch={setSearch}
-      filter={filter}
-      setFilter={setFilter}
+      handleSelectChange={handleSelectChange}
     />
   );
 };
