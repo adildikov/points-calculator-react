@@ -35,14 +35,15 @@ const ResultsPageContainer = () => {
     },
     [setFilter]
   );
-
+  console.info(filter);
+  console.info(search);
   return (
     <ResultsPage
       exams={subjects}
       score={score}
       search={search}
       setSearch={setSearch}
-      handleSelectChange={handleSelectChange}
+      onSelectChange={handleSelectChange}
     />
   );
 };

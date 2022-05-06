@@ -34,7 +34,7 @@ export const Image = styled.img`
 export const Input = styled.input`
   width: 106px;
   height: 35px;
-  background: ${Colors.lightgray};
+  background: ${Colors.lightgrey};
   color: ${Colors.dark};
   border-radius: 5px;
   border: ${({hasValue}) => hasValue ? `1px solid ${Colors.dark}` : `none`};

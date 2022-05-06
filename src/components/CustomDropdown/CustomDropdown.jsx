@@ -11,7 +11,7 @@ const customStyles = {
     transform: "translateY(-50%)",
     left: "20px",
     color: state.selectProps.menuIsOpen ? Colors.bombay : Colors.mineShaft,
-    fontFamily: "gTAmericaStandardRegular",
+    fontFamily: "montserratRegular",
     fontSize: 16,
   }),
   singleValue: (_, state) => ({
@@ -23,7 +23,7 @@ const customStyles = {
     width: "75%",
     marginTop: state.selectProps.selectProps.withLabel ? "6px" : "0px",
     color: Colors.mineShaft,
-    fontFamily: "gTAmericaStandardRegular",
+    fontFamily: "montserratRegular",
   }),
   container: (_, state) => ({
     position: "relative",
@@ -53,7 +53,7 @@ const customStyles = {
         ? Colors.white
         : Colors.alabaster,
     color: Colors.bombay,
-    fontFamily: "gTAmericaStandardRegular",
+    fontFamily: "montserratRegular",
     fontSize: 16,
     lineHeight: "20px",
   }),
@@ -67,7 +67,7 @@ const customStyles = {
     color: Colors.mineShaft,
     padding: 20,
     "&:hover": {
-      background: Colors.alabaster,
+      background: Colors.lightgrey,
     },
   }),
   selectedOption: () => ({

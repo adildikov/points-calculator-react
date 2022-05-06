@@ -42,7 +42,7 @@ export const Status = styled.div`
     border: 1px solid ${Colors.grey};
   `: `
     color: ${Colors.grey};
-    background: ${Colors.lightgray};
+    background: ${Colors.lightgrey};
   `}
   border-radius: 5px;
 `;
