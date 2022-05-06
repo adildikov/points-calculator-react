@@ -11,7 +11,8 @@ const Colors = {
   green: "#20d320",
   lightBlue: '#223CD6',
   redError: '#FF8F83',
-  redErrorBg: 'linear-gradient(0deg, rgba(255, 143, 131, 0.1), rgba(255, 143, 131, 0.1)), #FFFFFF'
+  redErrorBg: 'linear-gradient(0deg, rgba(255, 143, 131, 0.1), rgba(255, 143, 131, 0.1)), #FFFFFF',
+  lightRed: '#F21E5F'
 }
 
 export default Colors;

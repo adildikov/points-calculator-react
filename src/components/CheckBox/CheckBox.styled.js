@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import Colors from '@styles/colors';
 import { margin } from 'styled-system';
 
-export const Root = styled.div`
+export const Input = styled.input`
+  display: none;
+`;
+
+export const Root = styled.label`
   width: 35px;
   min-width: 35px;
   height: 6px;

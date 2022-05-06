@@ -1,5 +1,8 @@
-const sortAndConvertSubjectsValues = (values) => (
-  Object.entries(values)
+const subjNames = ["rus", "math", "ikt", "social", "eng", "bio", "geo", "chem", "phys", "litr", "hist"];
+
+const sortAndConvertSubjectsValues = (values) => {
+  return Object.entries(values)
+    .filter(item => subjNames.includes(item[0]))
     .map((item) => ({
       title: item[0],
       score: item[1],
@@ -13,6 +16,6 @@ const sortAndConvertSubjectsValues = (values) => (
       }
       return 0;
     })
-);
+  };
 
 export default sortAndConvertSubjectsValues;

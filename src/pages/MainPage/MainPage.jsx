@@ -8,22 +8,9 @@ import Popper from "@components/Popper/Popper";
 import { PopperBtn } from "@components/Popper/Popper.styled";
 import useWindowResize from "@hooks/useWindowResize";
 import { Viewport } from "@styles/media";
+import getInitialForSubject from "@utils/getInitialForSubject";
 
-const MainPage = ({
-  studyForm,
-  setStudyForm,
-  studyForm2,
-  setStudyForm2,
-  studyForm3,
-  setStudyForm3,
-  medal,
-  setMedal,
-  volunteering,
-  setVolunteering,
-  gto,
-  setGto,
-  onSetSubjects,
-}) => {
+const MainPage = ({ data, onSetOther, gto, onSetSubjects, resetData }) => {
   const { width: windowWidth } = useWindowResize();
   const isMobile = windowWidth <= Viewport.mobile;
   return (
@@ -35,18 +22,24 @@ const MainPage = ({
         </S.SubTitle>
         <Formik
           onSubmit={onSetSubjects}
+          onReset={resetData}
           initialValues={{
-            rus: 0,
-            math: 0,
-            ikt: 0,
-            social: 0,
-            eng: 0,
-            bio: 0,
-            geo: 0,
-            chem: 0,
-            phys: 0,
-            litr: 0,
-            hist: 0,
+            rus: getInitialForSubject(data, "rus"),
+            math: getInitialForSubject(data, "math"),
+            ikt: getInitialForSubject(data, "ikt"),
+            social: getInitialForSubject(data, "social"),
+            eng: getInitialForSubject(data, "eng"),
+            bio: getInitialForSubject(data, "bio"),
+            geo: getInitialForSubject(data, "geo"),
+            chem: getInitialForSubject(data, "chem"),
+            phys: getInitialForSubject(data, "phys"),
+            litr: getInitialForSubject(data, "litr"),
+            hist: getInitialForSubject(data, "hist"),
+            fullTime: data.studyForm.fullTime || false,
+            partTime: data.studyForm.partTime || false,
+            fullPartTime: data.studyForm.fullPartTime || false,
+            medal: data.other.medal || false,
+            volunteering: data.other.volunteering || false,
           }}
           validationSchema={Yup.object({
             rus: Yup.number().required().min(1).max(100),
@@ -60,6 +53,11 @@ const MainPage = ({
             phys: Yup.number().max(100),
             litr: Yup.number().max(100),
             hist: Yup.number().max(100),
+            fullTime: Yup.boolean(),
+            partTime: Yup.boolean(),
+            fullPartTime: Yup.boolean(),
+            medal: Yup.boolean(),
+            volunteering: Yup.boolean(),
           })}
         >
           {({ values, errors, isValid, handleChange }) => (
@@ -137,58 +135,79 @@ const MainPage = ({
               <S.SubTitle mt={40}>Форма обучения</S.SubTitle>
               <S.TogglesBlock>
                 <Toggle
+                  name="fullTime"
                   text="Очная"
                   width={155}
-                  isActive={studyForm}
-                  setActive={setStudyForm}
+                  isActive={values.fullTime}
+                  setActive={handleChange}
                   mr={isMobile ? 0 : 26}
                 />
                 <Toggle
+                  name="partTime"
                   text="Заочная"
                   width={173}
-                  isActive={studyForm2}
-                  setActive={setStudyForm2}
+                  isActive={values.partTime}
+                  setActive={handleChange}
                   mr={isMobile ? 0 : 26}
                 />
                 <Toggle
+                  name="fullPartTime"
                   text="Очно-заочная"
                   width={228}
-                  isActive={studyForm3}
-                  setActive={setStudyForm3}
+                  isActive={values.fullPartTime}
+                  setActive={handleChange}
                 />
               </S.TogglesBlock>
               <S.SubTitle mt={30}>Укажите индивидуальные достижения</S.SubTitle>
               <S.TogglesBlock>
                 <Toggle
+                  name="medal"
                   text="Золотая медаль"
                   width={245}
-                  isActive={medal}
-                  setActive={setMedal}
+                  isActive={values.medal}
+                  setActive={handleChange}
                   mr={isMobile ? 0 : 26}
                 />
                 <Toggle
+                  name="volunteering"
                   text="Волонтерство"
                   width={228}
-                  isActive={volunteering}
-                  setActive={setVolunteering}
+                  isActive={values.volunteering}
+                  setActive={handleChange}
                   mr={isMobile ? 0 : 26}
                 />
-                <Popper value={gto}>
-                  <PopperBtn onClick={() => setGto(null)}>–––––––</PopperBtn>
-                  <PopperBtn onClick={() => setGto("gold")}>Золото</PopperBtn>
-                  <PopperBtn onClick={() => setGto("silver")}>
+                <Popper value={data.other.gto}>
+                  <PopperBtn
+                    onClick={() => onSetOther({ name: "gto", value: null })}
+                  >
+                    –––––––
+                  </PopperBtn>
+                  <PopperBtn
+                    onClick={() => onSetOther({ name: "gto", value: "gold" })}
+                  >
+                    Золото
+                  </PopperBtn>
+                  <PopperBtn
+                    onClick={() => onSetOther({ name: "gto", value: "silver" })}
+                  >
                     Серебро
                   </PopperBtn>
-                  <PopperBtn onClick={() => setGto("bronze")}>Бронза</PopperBtn>
+                  <PopperBtn
+                    onClick={() => onSetOther({ name: "gto", value: "bronze" })}
+                  >
+                    Бронза
+                  </PopperBtn>
                 </Popper>
                 {/* <S.OtherBtnBody ml={26} width={240}>
                   <S.Text>Дополнительно</S.Text>
                 </S.OtherBtnBody> */}
               </S.TogglesBlock>
               <S.SubmitBtn type="submit" disabled={!isValid} mt={60}>
-                {" "}
                 Рассчитать свои шансы
               </S.SubmitBtn>
+              <S.ResetBtn type="reset" mt={20}>
+                Очистить
+              </S.ResetBtn>
             </Form>
           )}
         </Formik>
