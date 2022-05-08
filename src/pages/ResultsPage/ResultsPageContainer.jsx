@@ -39,7 +39,7 @@ const ResultsPageContainer = () => {
   // console.info(search);
   return (
     <ResultsPage
-      exams={subjects}
+      subjects={subjects}
       score={score}
       search={search}
       setSearch={setSearch}

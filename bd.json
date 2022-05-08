@@ -1,0 +1,92 @@
+{
+  "directions": [
+    {
+      "id": 0,
+      "name": "Экономика",
+      "numid": "38.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["rus", "math", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 274
+        },
+        {
+          "year": 2020,
+          "score": 255
+        },
+        {
+          "year": 2019,
+          "score": 252
+        },
+        {
+          "year": 2018,
+          "score": 245
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 4
+        },
+        {
+          "year": 2020,
+          "score": 5
+        },
+        {
+          "year": 2019,
+          "score": 0
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 1,
+      "name": "Фундаментальная информатика и информационные технологии",
+      "numid": "02.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["rus", "math", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 183
+        },
+        {
+          "year": 2020,
+          "score": 184
+        },
+        {
+          "year": 2019,
+          "score": 201
+        },
+        {
+          "year": 2018,
+          "score": 186
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 50
+        },
+        {
+          "year": 2020,
+          "score": 50
+        },
+        {
+          "year": 2019,
+          "score": 29
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    }
+  ]
+}

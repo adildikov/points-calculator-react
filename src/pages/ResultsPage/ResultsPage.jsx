@@ -37,21 +37,84 @@ const fac = {
       score: 245,
     },
   ],
-  number_of_places: {
-    2021: 4,
-    2020: 5,
-    2019: 0,
-    2018: null,
-  },
+  number_of_places: [
+    {
+      year: 2021,
+      score: 4,
+    },
+    {
+      year: 2020,
+      score: 5,
+    },
+    {
+      year: 2019,
+      score: 0,
+    },
+    {
+      year: 2018,
+      score: null,
+    },
+  ],
   cost: 108370,
 };
 
-const ResultsPage = ({ exams, score, search, setSearch, onSelectChange }) => {
+const fac2 = {
+  id: 1,
+  name: "Фундаментальная информатика и информационные технологии",
+  numid: "02.03.02",
+  type: "Бакалавриат",
+  subjects: ["rus", "math", "ikt/phys"],
+  points: [
+    {
+      year: 2021,
+      score: 183,
+    },
+    {
+      year: 2020,
+      score: 184,
+    },
+    {
+      year: 2019,
+      score: 201,
+    },
+    {
+      year: 2018,
+      score: 186,
+    },
+  ],
+  number_of_places: [
+    {
+      year: 2021,
+      score: 50,
+    },
+    {
+      year: 2020,
+      score: 50,
+    },
+    {
+      year: 2019,
+      score: 29,
+    },
+    {
+      year: 2018,
+      score: null,
+    },
+  ],
+  cost: 108370,
+};
+
+const ResultsPage = ({
+  subjects,
+  score,
+  search,
+  setSearch,
+  onSelectChange,
+}) => {
   return (
     <S.Root>
-      {exams.length > 0 ? (
+      {subjects.length > 0 ? (
         <>
-          <UserResult exams={exams} score={score} />
+          <UserResult exams={subjects} score={score} />
           <S.Content>
             <S.Title>Предложенные направления</S.Title>
             <S.SearchFilterWrapper>
@@ -89,7 +152,16 @@ const ResultsPage = ({ exams, score, search, setSearch, onSelectChange }) => {
               </Formik>
             </S.SearchFilterWrapper>
             <S.FacultyList>
-              <Faculty faculty={fac} />
+              <Faculty
+                faculty={fac}
+                totalScore={score.totalScore}
+                subjects={subjects}
+              />
+              <Faculty
+                faculty={fac2}
+                totalScore={score.totalScore}
+                subjects={subjects}
+              />
             </S.FacultyList>
           </S.Content>
         </>

@@ -95,5 +95,5 @@ export const Status = styled.div`
   width: ${({width}) => width || '100%'};
   height: 8px;
   border-radius: 8px;
-  background: ${({bgColor}) => bgColor || Colors.grey};
+  background: ${({currentColor}) => currentColor || Colors.grey};
 `;
