@@ -57,6 +57,7 @@ export const ChanceText = styled.div`
   font-family: montserratRegular;
   font-size: 24px;
   line-height: 29px;
+  text-align: right;
   color: ${({currentColor}) => currentColor || Colors.dark};
   ${margin};
 `;
@@ -84,6 +85,7 @@ export const ChanceBlock = styled.div`
 export const ProgressBar = styled.div`
   position: relative;
   width: 100%;
+  min-width: 350px;
   height: 8px;
   border-radius: 8px;
   background: ${Colors.alabaster};
