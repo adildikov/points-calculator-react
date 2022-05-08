@@ -8,7 +8,7 @@ import countChance from "@utils/countChance";
 
 const Faculty = ({ faculty, totalScore, subjects }) => {
   const [isVisible, setVisible] = useToggle(false);
-  const color = countChance(
+  const { chance, chancecolor, chanceText } = countChance(
     totalScore,
     faculty.points[0].score,
     countMean(faculty.points),
@@ -17,6 +17,7 @@ const Faculty = ({ faculty, totalScore, subjects }) => {
     faculty.subjects,
     subjects
   );
+
   return (
     <S.Root>
       <S.MainSection mb={20}>
@@ -34,14 +35,14 @@ const Faculty = ({ faculty, totalScore, subjects }) => {
           </S.SubjectsList>
         </S.InfoBlock>
         <S.ChanceBlock>
-          <S.BigNumber currentColor={color}>
+          <S.BigNumber currentColor={chancecolor}>
             {faculty.points[0].score}
           </S.BigNumber>
-          <S.ChanceText mt={10} currentColor={color}>
-            Очень высокий шанс поступления
+          <S.ChanceText mt={10} currentColor={chancecolor}>
+            {chanceText}
           </S.ChanceText>
           <S.ProgressBar mt={16}>
-            <S.Status currentColor={color} />
+            <S.Status currentColor={chancecolor} width={chance} />
           </S.ProgressBar>
         </S.ChanceBlock>
       </S.MainSection>

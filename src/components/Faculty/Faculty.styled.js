@@ -92,7 +92,7 @@ export const ProgressBar = styled.div`
 
 export const Status = styled.div`
   position: absolute;
-  width: ${({width}) => width || '100%'};
+  width: ${({width}) => `${width}%` || '100%'};
   height: 8px;
   border-radius: 8px;
   background: ${({currentColor}) => currentColor || Colors.grey};
