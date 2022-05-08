@@ -35,8 +35,8 @@ const ResultsPageContainer = () => {
     },
     [setFilter]
   );
-  console.info(filter);
-  console.info(search);
+  // console.info(filter);
+  // console.info(search);
   return (
     <ResultsPage
       exams={subjects}

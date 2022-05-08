@@ -138,3 +138,9 @@ export const Btn = styled.button`
     width: 300px;
   `}
 `;
+
+export const FacultyList = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+`;

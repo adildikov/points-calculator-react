@@ -6,11 +6,45 @@ import * as Yup from "yup";
 import { Field, Formik } from "formik";
 import SelectField from "@components/CustomDropdown";
 import AppLink from "@components/AppLink";
+import Faculty from "@components/Faculty/Faculty";
 
 const options = [
   { value: "title", label: "Title " },
   { value: "created_at", label: "Date" },
 ];
+
+const fac = {
+  id: 0,
+  name: "Экономика",
+  numid: "38.03.01",
+  type: "Бакалавриат",
+  subjects: ["rus", "math", "social"],
+  points: [
+    {
+      year: 2021,
+      score: 274,
+    },
+    {
+      year: 2020,
+      score: 255,
+    },
+    {
+      year: 2019,
+      score: 252,
+    },
+    {
+      year: 2018,
+      score: 245,
+    },
+  ],
+  number_of_places: {
+    2021: 4,
+    2020: 5,
+    2019: 0,
+    2018: null,
+  },
+  cost: 108370,
+};
 
 const ResultsPage = ({ exams, score, search, setSearch, onSelectChange }) => {
   return (
@@ -54,6 +88,9 @@ const ResultsPage = ({ exams, score, search, setSearch, onSelectChange }) => {
                 </S.Form>
               </Formik>
             </S.SearchFilterWrapper>
+            <S.FacultyList>
+              <Faculty faculty={fac} />
+            </S.FacultyList>
           </S.Content>
         </>
       ) : (
