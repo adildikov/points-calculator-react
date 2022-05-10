@@ -615,6 +615,490 @@
         }
       ],
       "cost": 108370
+    },
+    {
+      "id": 13,
+      "name": "Сервис",
+      "numid": "43.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 223
+        },
+        {
+          "year": 2020,
+          "score": 220
+        },
+        {
+          "year": 2019,
+          "score": 215
+        },
+        {
+          "year": 2018,
+          "score": 212
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 13
+        },
+        {
+          "year": 2020,
+          "score": 0
+        },
+        {
+          "year": 2019,
+          "score": 9
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 14,
+      "name": "История",
+      "numid": "46.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["hist", "rus", "social/eng"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 198
+        },
+        {
+          "year": 2020,
+          "score": 220
+        },
+        {
+          "year": 2019,
+          "score": 226
+        },
+        {
+          "year": 2018,
+          "score": 209
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 24
+        },
+        {
+          "year": 2020,
+          "score": 27
+        },
+        {
+          "year": 2019,
+          "score": 25
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 15,
+      "name": "Социология",
+      "numid": "39.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 222
+        },
+        {
+          "year": 2020,
+          "score": 217
+        },
+        {
+          "year": 2019,
+          "score": 215
+        },
+        {
+          "year": 2018,
+          "score": 207
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 14
+        },
+        {
+          "year": 2020,
+          "score": 16
+        },
+        {
+          "year": 2019,
+          "score": 12
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 16,
+      "name": "Организация работы с молодежью",
+      "numid": "39.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["hist", "rus", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 200
+        },
+        {
+          "year": 2020,
+          "score": 202
+        },
+        {
+          "year": 2019,
+          "score": 202
+        },
+        {
+          "year": 2018,
+          "score": 205
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 16
+        },
+        {
+          "year": 2020,
+          "score": 16
+        },
+        {
+          "year": 2019,
+          "score": 15
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 17,
+      "name": "Реклама и связи с общественностью",
+      "numid": "42.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["hist", "rus", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 224
+        },
+        {
+          "year": 2020,
+          "score": 241
+        },
+        {
+          "year": 2019,
+          "score": 226
+        },
+        {
+          "year": 2018,
+          "score": 204
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 7
+        },
+        {
+          "year": 2020,
+          "score": 9
+        },
+        {
+          "year": 2019,
+          "score": 8
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 18,
+      "name": "Туризм",
+      "numid": "43.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["hist", "rus", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 220
+        },
+        {
+          "year": 2020,
+          "score": 212
+        },
+        {
+          "year": 2019,
+          "score": 216
+        },
+        {
+          "year": 2018,
+          "score": 203
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 12
+        },
+        {
+          "year": 2020,
+          "score": 0
+        },
+        {
+          "year": 2019,
+          "score": 9
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 19,
+      "name": "Специальное (дефектологическое) образование",
+      "numid": "44.03.03",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "bio"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 155
+        },
+        {
+          "year": 2020,
+          "score": 177
+        },
+        {
+          "year": 2019,
+          "score": 181
+        },
+        {
+          "year": 2018,
+          "score": 203
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 22
+        },
+        {
+          "year": 2020,
+          "score": 18
+        },
+        {
+          "year": 2019,
+          "score": 15
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 20,
+      "name": "Социальная работа",
+      "numid": "39.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["social", "rus", "hist"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 163
+        },
+        {
+          "year": 2020,
+          "score": 190
+        },
+        {
+          "year": 2019,
+          "score": 195
+        },
+        {
+          "year": 2018,
+          "score": 200
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 16
+        },
+        {
+          "year": 2020,
+          "score": 19
+        },
+        {
+          "year": 2019,
+          "score": 2
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 21,
+      "name": "Педагогическое образование (профиль Начальное образование)",
+      "numid": "44.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 193
+        },
+        {
+          "year": 2020,
+          "score": 209
+        },
+        {
+          "year": 2019,
+          "score": 200
+        },
+        {
+          "year": 2018,
+          "score": 199
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 25
+        },
+        {
+          "year": 2020,
+          "score": 19
+        },
+        {
+          "year": 2019,
+          "score": 13
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 22,
+      "name": "Документоведение и архивоведение",
+      "numid": "46.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["hist", "rus", "social/eng"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 211
+        },
+        {
+          "year": 2020,
+          "score": 210
+        },
+        {
+          "year": 2019,
+          "score": 211
+        },
+        {
+          "year": 2018,
+          "score": 197
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 10
+        },
+        {
+          "year": 2020,
+          "score": 11
+        },
+        {
+          "year": 2019,
+          "score": 10
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 23,
+      "name": "Педагогическое образование (профиль Изобразительное искусство)",
+      "numid": "44.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["social", "rus", "creative"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 162
+        },
+        {
+          "year": 2020,
+          "score": 190
+        },
+        {
+          "year": 2019,
+          "score": 177
+        },
+        {
+          "year": 2018,
+          "score": 194
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 21
+        },
+        {
+          "year": 2020,
+          "score": 15
+        },
+        {
+          "year": 2019,
+          "score": 12
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
     }
   ]
 }
