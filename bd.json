@@ -87,6 +87,358 @@
         }
       ],
       "cost": 108370
+    },
+    {
+      "id": 2,
+      "name": "Юриспруденция",
+      "numid": "40.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["social", "rus", "hist/eng"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 247
+        },
+        {
+          "year": 2020,
+          "score": 268
+        },
+        {
+          "year": 2019,
+          "score": 241
+        },
+        {
+          "year": 2018,
+          "score": 248
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 16
+        },
+        {
+          "year": 2020,
+          "score": 15
+        },
+        {
+          "year": 2019,
+          "score": 14
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 3,
+      "name": "Лингвистика",
+      "numid": "45.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["rus", "eng", "hist/litr"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 263
+        },
+        {
+          "year": 2020,
+          "score": 257
+        },
+        {
+          "year": 2019,
+          "score": 245
+        },
+        {
+          "year": 2018,
+          "score": 240
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 33
+        },
+        {
+          "year": 2020,
+          "score": 35
+        },
+        {
+          "year": 2019,
+          "score": 38
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 120000
+    },
+    {
+      "id": 4,
+      "name": "Зарубежное регионоведение",
+      "numid": "41.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["hist", "rus", "eng"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 212
+        },
+        {
+          "year": 2020,
+          "score": 246
+        },
+        {
+          "year": 2019,
+          "score": 244
+        },
+        {
+          "year": 2018,
+          "score": 235
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 12
+        },
+        {
+          "year": 2020,
+          "score": 12
+        },
+        {
+          "year": 2019,
+          "score": 12
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 5,
+      "name": "Менеджмент",
+      "numid": "38.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 253
+        },
+        {
+          "year": 2020,
+          "score": 248
+        },
+        {
+          "year": 2019,
+          "score": 243
+        },
+        {
+          "year": 2018,
+          "score": 233
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 4
+        },
+        {
+          "year": 2020,
+          "score": 4
+        },
+        {
+          "year": 2019,
+          "score": 0
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 5,
+      "name": "Международные отношения",
+      "numid": "41.03.05",
+      "type": "Бакалавриат",
+      "subjects": ["hist", "rus", "social/eng"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 235
+        },
+        {
+          "year": 2020,
+          "score": 239
+        },
+        {
+          "year": 2019,
+          "score": 215
+        },
+        {
+          "year": 2018,
+          "score": 233
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 13
+        },
+        {
+          "year": 2020,
+          "score": 12
+        },
+        {
+          "year": 2019,
+          "score": 11
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 6,
+      "name": "Журналистика",
+      "numid": "42.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["litr", "rus", "social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 233
+        },
+        {
+          "year": 2020,
+          "score": 222
+        },
+        {
+          "year": 2019,
+          "score": 232
+        },
+        {
+          "year": 2018,
+          "score": 233
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 8
+        },
+        {
+          "year": 2020,
+          "score": 9
+        },
+        {
+          "year": 2019,
+          "score": 8
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 7,
+      "name": "Филология",
+      "numid": "45.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["litr", "rus", "social/hist"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 233
+        },
+        {
+          "year": 2020,
+          "score": 232
+        },
+        {
+          "year": 2019,
+          "score": 229
+        },
+        {
+          "year": 2018,
+          "score": 233
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 22
+        },
+        {
+          "year": 2020,
+          "score": 25
+        },
+        {
+          "year": 2019,
+          "score": 25
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 8,
+      "name": "Педагогическое образование (с двумя профилями подготовки)",
+      "numid": "44.03.05",
+      "type": "Бакалавриат",
+      "subjects": ["social", "rus", "eng"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 224
+        },
+        {
+          "year": 2020,
+          "score": 245
+        },
+        {
+          "year": 2019,
+          "score": 229
+        },
+        {
+          "year": 2018,
+          "score": 233
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 25
+        },
+        {
+          "year": 2020,
+          "score": 17
+        },
+        {
+          "year": 2019,
+          "score": 12
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
     }
   ]
 }
