@@ -10,6 +10,7 @@ export const Root = styled.div`
   background: ${Colors.white};
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
+  margin-bottom: 30px;
 `;
 
 export const MainSection = styled.div`
