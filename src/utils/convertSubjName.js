@@ -24,6 +24,22 @@ const convertSubjName = (subject) => {
       return "И";
     case "ikt/phys":
       return "ИКТ | Ф"
+    case "hist/eng":
+      return "И | ИЯ"
+    case "hist/litr":
+      return "И | Л"
+    case "social/eng":
+      return "О | ИЯ"
+    case "social/hist":
+      return "О | И"
+    case "math/social":
+      return "М | О"
+    case "chem/math":
+      return "Х | М"
+    case "math/bio":
+      return "М | Б"
+    case "ikt/eng":
+      return "ИКТ | ИЯ"
     case "creative":
       return "Испытание"
     default:

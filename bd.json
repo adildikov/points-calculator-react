@@ -1545,7 +1545,7 @@
       "name": "Экология и природопользование",
       "numid": "05.03.06",
       "type": "Бакалавриат",
-      "subjects": ["geo", "rus", "bio/math"],
+      "subjects": ["geo", "rus", "math/bio"],
       "points": [
         {
           "year": 2021,
@@ -1589,7 +1589,7 @@
       "name": "Химия",
       "numid": "04.03.01",
       "type": "Бакалавриат",
-      "subjects": ["chem", "rus", "bio/math"],
+      "subjects": ["chem", "rus", "math/bio"],
       "points": [
         {
           "year": 2021,
@@ -1633,7 +1633,7 @@
       "name": "География",
       "numid": "05.03.02",
       "type": "Бакалавриат",
-      "subjects": ["geo", "rus", "bio/math"],
+      "subjects": ["geo", "rus", "math/bio"],
       "points": [
         {
           "year": 2021,
