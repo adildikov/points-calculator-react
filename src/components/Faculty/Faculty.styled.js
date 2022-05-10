@@ -21,6 +21,7 @@ export const MainSection = styled.div`
 
 export const OtherSection = styled.div`
   ${({isVisible}) => isVisible ? 'display: block;' : 'display: none;'};
+  margin-bottom: 20px;
 `;
 
 export const ToggleArrowToBottom = styled.img`
@@ -113,5 +114,12 @@ export const Line = styled.div`
   ${margin};
 `;
 
-export const RubbleIcon = styled.img`
+export const RubbleIcon = styled.img``;
+
+export const GraphicsBlock = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 120px;
+  ${margin};
 `;

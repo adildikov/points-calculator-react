@@ -57,8 +57,10 @@ const Faculty = ({ faculty, totalScore, subjects }) => {
           <S.RubbleIcon src={rubbleIcon} />
           <S.Text ml={20}>{`Стоимость обучения — ${faculty.cost}₽`}</S.Text>
         </S.Line>
-        <Graphic stats={faculty.points} />
-        <Graphic stats={faculty.number_of_places} isPlaces />
+        <S.GraphicsBlock mt={30}>
+          <Graphic stats={faculty.points} />
+          <Graphic stats={faculty.number_of_places} isPlaces />
+        </S.GraphicsBlock>
       </S.OtherSection>
       {isVisible && (
         <S.ToggleArrowToTop src={toggleArrowIcon} onClick={setVisible} />
