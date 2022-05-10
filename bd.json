@@ -1891,6 +1891,94 @@
         }
       ],
       "cost": 125410
+    },
+    {
+      "id": 42,
+      "name": "Таможенное дело",
+      "numid": "38.05.02",
+      "type": "Специалитет",
+      "subjects": ["social", "rus", "ikt/eng"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 231
+        },
+        {
+          "year": 2020,
+          "score": 233
+        },
+        {
+          "year": 2019,
+          "score": 240
+        },
+        {
+          "year": 2018,
+          "score": 230
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 4
+        },
+        {
+          "year": 2020,
+          "score": 10
+        },
+        {
+          "year": 2019,
+          "score": 30
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 43,
+      "name": "Государственное и муниципальное управление",
+      "numid": "38.03.04",
+      "type": "Бакалавриат",
+      "subjects": ["social", "rus", "math"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 248
+        },
+        {
+          "year": 2020,
+          "score": 233
+        },
+        {
+          "year": 2019,
+          "score": 236
+        },
+        {
+          "year": 2018,
+          "score": 230
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 4
+        },
+        {
+          "year": 2020,
+          "score": 5
+        },
+        {
+          "year": 2019,
+          "score": 0
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
     }
   ]
 }
