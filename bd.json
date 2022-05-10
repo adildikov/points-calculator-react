@@ -1099,6 +1099,798 @@
         }
       ],
       "cost": 108370
+    },
+    {
+      "id": 24,
+      "name": "Клиническая психология",
+      "numid": "37.05.01",
+      "type": "Специалитет",
+      "subjects": ["bio", "rus", "math/social"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 204
+        },
+        {
+          "year": 2020,
+          "score": 208
+        },
+        {
+          "year": 2019,
+          "score": 194
+        },
+        {
+          "year": 2018,
+          "score": 192
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 17
+        },
+        {
+          "year": 2020,
+          "score": 22
+        },
+        {
+          "year": 2019,
+          "score": 19
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 25,
+      "name": "Прикладная математика и информатика",
+      "numid": "01.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 138
+        },
+        {
+          "year": 2020,
+          "score": 173
+        },
+        {
+          "year": 2019,
+          "score": 185
+        },
+        {
+          "year": 2018,
+          "score": 191
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 25
+        },
+        {
+          "year": 2020,
+          "score": 39
+        },
+        {
+          "year": 2019,
+          "score": 24
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 26,
+      "name": "Прикладная информатика",
+      "numid": "09.03.03",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 138
+        },
+        {
+          "year": 2020,
+          "score": 187
+        },
+        {
+          "year": 2019,
+          "score": 197
+        },
+        {
+          "year": 2018,
+          "score": 187
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 55
+        },
+        {
+          "year": 2020,
+          "score": 55
+        },
+        {
+          "year": 2019,
+          "score": 30
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 125410
+    },
+    {
+      "id": 27,
+      "name": "Компьютерная безопасность",
+      "numid": "10.05.01",
+      "type": "Специалитет",
+      "subjects": ["math", "rus", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 161
+        },
+        {
+          "year": 2020,
+          "score": 191
+        },
+        {
+          "year": 2019,
+          "score": 196
+        },
+        {
+          "year": 2018,
+          "score": 185
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 51
+        },
+        {
+          "year": 2020,
+          "score": 65
+        },
+        {
+          "year": 2019,
+          "score": 40
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 125410
+    },
+    {
+      "id": 28,
+      "name": "Теология",
+      "numid": "48.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["social", "rus", "hist"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 190
+        },
+        {
+          "year": 2020,
+          "score": 177
+        },
+        {
+          "year": 2019,
+          "score": 188
+        },
+        {
+          "year": 2018,
+          "score": 184
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 0
+        },
+        {
+          "year": 2020,
+          "score": 0
+        },
+        {
+          "year": 2019,
+          "score": 11
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 54185
+    },
+    {
+      "id": 29,
+      "name": "Математика и компьютерные науки",
+      "numid": "02.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 141
+        },
+        {
+          "year": 2020,
+          "score": 183
+        },
+        {
+          "year": 2019,
+          "score": 183
+        },
+        {
+          "year": 2018,
+          "score": 183
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 30
+        },
+        {
+          "year": 2020,
+          "score": 30
+        },
+        {
+          "year": 2019,
+          "score": 26
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108370
+    },
+    {
+      "id": 30,
+      "name": "Биология",
+      "numid": "06.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["rus", "bio", "chem/math"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 180
+        },
+        {
+          "year": 2020,
+          "score": 170
+        },
+        {
+          "year": 2019,
+          "score": 168
+        },
+        {
+          "year": 2018,
+          "score": 181
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 31
+        },
+        {
+          "year": 2020,
+          "score": 31
+        },
+        {
+          "year": 2019,
+          "score": 32
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 125410
+    },
+    {
+      "id": 31,
+      "name": "Психолого-педагогическое образование",
+      "numid": "44.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["rus", "bio", "math"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 126
+        },
+        {
+          "year": 2020,
+          "score": 178
+        },
+        {
+          "year": 2019,
+          "score": 161
+        },
+        {
+          "year": 2018,
+          "score": 179
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 21
+        },
+        {
+          "year": 2020,
+          "score": 20
+        },
+        {
+          "year": 2019,
+          "score": 12
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108310
+    },
+    {
+      "id": 32,
+      "name": "Фундаментальная и прикладная химия",
+      "numid": "04.05.01",
+      "type": "Специалитет",
+      "subjects": ["chem", "rus", "math/bio"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 170
+        },
+        {
+          "year": 2020,
+          "score": 160
+        },
+        {
+          "year": 2019,
+          "score": 173
+        },
+        {
+          "year": 2018,
+          "score": 171
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 20
+        },
+        {
+          "year": 2020,
+          "score": 15
+        },
+        {
+          "year": 2019,
+          "score": 21
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 125410
+    },
+    {
+      "id": 33,
+      "name": "Математика",
+      "numid": "01.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 149
+        },
+        {
+          "year": 2020,
+          "score": 176
+        },
+        {
+          "year": 2019,
+          "score": 175
+        },
+        {
+          "year": 2018,
+          "score": 169
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 23
+        },
+        {
+          "year": 2020,
+          "score": 25
+        },
+        {
+          "year": 2019,
+          "score": 15
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 108310
+    },
+    {
+      "id": 34,
+      "name": "Экология и природопользование",
+      "numid": "05.03.06",
+      "type": "Бакалавриат",
+      "subjects": ["geo", "rus", "bio/math"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 175
+        },
+        {
+          "year": 2020,
+          "score": 165
+        },
+        {
+          "year": 2019,
+          "score": 161
+        },
+        {
+          "year": 2018,
+          "score": 168
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 25
+        },
+        {
+          "year": 2020,
+          "score": 25
+        },
+        {
+          "year": 2019,
+          "score": 25
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 133250
+    },
+    {
+      "id": 35,
+      "name": "Химия",
+      "numid": "04.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["chem", "rus", "bio/math"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 168
+        },
+        {
+          "year": 2020,
+          "score": 154
+        },
+        {
+          "year": 2019,
+          "score": 175
+        },
+        {
+          "year": 2018,
+          "score": 167
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 30
+        },
+        {
+          "year": 2020,
+          "score": 51
+        },
+        {
+          "year": 2019,
+          "score": 26
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 133250
+    },
+    {
+      "id": 36,
+      "name": "География",
+      "numid": "05.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["geo", "rus", "bio/math"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 137
+        },
+        {
+          "year": 2020,
+          "score": 164
+        },
+        {
+          "year": 2019,
+          "score": 164
+        },
+        {
+          "year": 2018,
+          "score": 162
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 25
+        },
+        {
+          "year": 2020,
+          "score": 50
+        },
+        {
+          "year": 2019,
+          "score": 25
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 133250
+    },
+    {
+      "id": 37,
+      "name": "Лесное дело",
+      "numid": "35.03.01",
+      "type": "Бакалавриат",
+      "subjects": ["bio", "rus", "chem/math"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 123
+        },
+        {
+          "year": 2020,
+          "score": 149
+        },
+        {
+          "year": 2019,
+          "score": 137
+        },
+        {
+          "year": 2018,
+          "score": 156
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 40
+        },
+        {
+          "year": 2020,
+          "score": 41
+        },
+        {
+          "year": 2019,
+          "score": 22
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 133250
+    },
+    {
+      "id": 38,
+      "name": "Садоводство",
+      "numid": "35.03.05",
+      "type": "Бакалавриат",
+      "subjects": ["bio", "rus", "chem/math"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 123
+        },
+        {
+          "year": 2020,
+          "score": 155
+        },
+        {
+          "year": 2019,
+          "score": 118
+        },
+        {
+          "year": 2018,
+          "score": 151
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 25
+        },
+        {
+          "year": 2020,
+          "score": 25
+        },
+        {
+          "year": 2019,
+          "score": 20
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 125410
+    },
+    {
+      "id": 39,
+      "name": "Инноватика",
+      "numid": "27.03.05",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 129
+        },
+        {
+          "year": 2020,
+          "score": 137
+        },
+        {
+          "year": 2019,
+          "score": 181
+        },
+        {
+          "year": 2018,
+          "score": 145
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 26
+        },
+        {
+          "year": 2020,
+          "score": 20
+        },
+        {
+          "year": 2019,
+          "score": 14
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 125410
+    },
+    {
+      "id": 40,
+      "name": "Радиофизика",
+      "numid": "03.03.03",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 142
+        },
+        {
+          "year": 2020,
+          "score": 129
+        },
+        {
+          "year": 2019,
+          "score": 149
+        },
+        {
+          "year": 2018,
+          "score": 135
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 26
+        },
+        {
+          "year": 2020,
+          "score": 32
+        },
+        {
+          "year": 2019,
+          "score": 18
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 125410
+    },
+    {
+      "id": 41,
+      "name": "Физика",
+      "numid": "03.03.02",
+      "type": "Бакалавриат",
+      "subjects": ["math", "rus", "ikt/phys"],
+      "points": [
+        {
+          "year": 2021,
+          "score": 141
+        },
+        {
+          "year": 2020,
+          "score": 119
+        },
+        {
+          "year": 2019,
+          "score": 149
+        },
+        {
+          "year": 2018,
+          "score": 135
+        }
+      ],
+      "number_of_places": [
+        {
+          "year": 2021,
+          "score": 22
+        },
+        {
+          "year": 2020,
+          "score": 30
+        },
+        {
+          "year": 2019,
+          "score": 19
+        },
+        {
+          "year": 2018,
+          "score": null
+        }
+      ],
+      "cost": 125410
     }
   ]
 }
