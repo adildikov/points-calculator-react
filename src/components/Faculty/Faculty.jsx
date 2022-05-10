@@ -46,14 +46,15 @@ const Faculty = ({ faculty, totalScore, subjects }) => {
           </S.ProgressBar>
         </S.ChanceBlock>
       </S.MainSection>
-      <S.ToggleArrow
-        src={toggleArrowIcon}
-        isVisible={isVisible}
-        onClick={setVisible}
-      />
+      {!isVisible && (
+        <S.ToggleArrowToBottom src={toggleArrowIcon} onClick={setVisible} />
+      )}
       <S.OtherSection isVisible={isVisible}>
         <h2>asfasfasf</h2>
       </S.OtherSection>
+      {isVisible && (
+        <S.ToggleArrowToTop src={toggleArrowIcon} onClick={setVisible} />
+      )}
     </S.Root>
   );
 };

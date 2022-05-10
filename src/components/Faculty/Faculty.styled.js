@@ -23,11 +23,17 @@ export const OtherSection = styled.div`
   ${({isVisible}) => isVisible ? 'display: flex;' : 'display: none;'};
 `;
 
-export const ToggleArrow = styled.img`
+export const ToggleArrowToBottom = styled.img`
   display: flex;
   margin: 0 auto;
   cursor: pointer;
-  ${({isVisible}) => isVisible && `transform: rotate(180deg)`};
+`;
+
+export const ToggleArrowToTop = styled.img`
+  display: flex;
+  margin: 0 auto;
+  cursor: pointer;
+  transform: rotate(180deg);
 `;
 
 export const Title = styled.div`
