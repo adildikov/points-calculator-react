@@ -67,7 +67,7 @@ const fac2 = {
   points: [
     {
       year: 2021,
-      score: 183,
+      score: 184,
     },
     {
       year: 2020,

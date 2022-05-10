@@ -6,6 +6,7 @@ import toggleArrowIcon from "@images/toggleArrow.svg";
 import rubbleIcon from "@images/rubbleIcon.svg";
 import countMean from "@utils/countMean";
 import countChance from "@utils/countChance";
+import Graphic from "@components/Graphic";
 
 const Faculty = ({ faculty, totalScore, subjects }) => {
   const [isVisible, setVisible] = useToggle(false);
@@ -56,6 +57,8 @@ const Faculty = ({ faculty, totalScore, subjects }) => {
           <S.RubbleIcon src={rubbleIcon} />
           <S.Text ml={20}>{`Стоимость обучения — ${faculty.cost}₽`}</S.Text>
         </S.Line>
+        <Graphic stats={faculty.points} />
+        <Graphic stats={faculty.number_of_places} isPlaces />
       </S.OtherSection>
       {isVisible && (
         <S.ToggleArrowToTop src={toggleArrowIcon} onClick={setVisible} />
