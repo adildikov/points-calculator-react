@@ -24,6 +24,8 @@ const convertSubjName = (subject) => {
       return "И";
     case "ikt/phys":
       return "ИКТ | Ф"
+    case "creative":
+      return "Испытание"
     default:
       return "П";
   }
