@@ -20,7 +20,7 @@ export const MainSection = styled.div`
 `;
 
 export const OtherSection = styled.div`
-  ${({isVisible}) => isVisible ? 'display: flex;' : 'display: none;'};
+  ${({isVisible}) => isVisible ? 'display: block;' : 'display: none;'};
 `;
 
 export const ToggleArrowToBottom = styled.img`
@@ -105,4 +105,13 @@ export const Status = styled.div`
   height: 8px;
   border-radius: 8px;
   background: ${({currentColor}) => currentColor || Colors.grey};
+`;
+
+export const Line = styled.div`
+  display: flex;
+  align-items: center;
+  ${margin};
+`;
+
+export const RubbleIcon = styled.img`
 `;

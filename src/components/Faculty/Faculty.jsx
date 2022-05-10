@@ -3,6 +3,7 @@ import SubjectBubble from "@components/SubjectBubble";
 import * as S from "./Faculty.styled";
 import useToggle from "@hooks/useToggle";
 import toggleArrowIcon from "@images/toggleArrow.svg";
+import rubbleIcon from "@images/rubbleIcon.svg";
 import countMean from "@utils/countMean";
 import countChance from "@utils/countChance";
 
@@ -50,7 +51,11 @@ const Faculty = ({ faculty, totalScore, subjects }) => {
         <S.ToggleArrowToBottom src={toggleArrowIcon} onClick={setVisible} />
       )}
       <S.OtherSection isVisible={isVisible}>
-        <h2>asfasfasf</h2>
+        <S.Divider width="95%" mt={40} />
+        <S.Line mt={30}>
+          <S.RubbleIcon src={rubbleIcon} />
+          <S.Text ml={20}>{`Стоимость обучения — ${faculty.cost}₽`}</S.Text>
+        </S.Line>
       </S.OtherSection>
       {isVisible && (
         <S.ToggleArrowToTop src={toggleArrowIcon} onClick={setVisible} />
