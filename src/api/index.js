@@ -1,7 +1,6 @@
 export const apiUrl = "http://localhost:3001/directions";
 
 export const getDirectionsRequest = (payload) => {
-  console.info(payload);
   return fetch(payload.search
       ? `${apiUrl}?name_like=${payload.search}`
       : payload.filter

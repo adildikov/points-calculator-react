@@ -120,6 +120,6 @@ export const GraphicsBlock = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px 120px;
+  gap: 20px 80px;
   ${margin};
 `;
