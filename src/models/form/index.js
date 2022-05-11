@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = localStorage.getItem('data')
   ? JSON.parse(localStorage.getItem('data'))
   : {
+      directions: [],
       subjects: [],
       studyForm: {
         fullTime: false,
@@ -45,6 +46,10 @@ const form = createSlice({
         volunteering: false,
         gto: false,
       };
+    },
+    getDirections: (state, { payload }) => state,
+    getDirectionsSuccess(state, {payload}) {
+      state.directions = payload;
     }
   },
 });

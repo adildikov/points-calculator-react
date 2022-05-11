@@ -13,6 +13,7 @@ module.exports = {
       '@utils': resolvePath('./src/utils'),
       '@models': resolvePath('./src/models'),
       '@pages': resolvePath('./src/pages'),
+      '@api': resolvePath('./src/api'),
     },
   },
 };

@@ -9,101 +9,12 @@ import AppLink from "@components/AppLink";
 import Faculty from "@components/Faculty/Faculty";
 
 const options = [
-  { value: "title", label: "Title " },
-  { value: "created_at", label: "Date" },
+  { value: "asc", label: "По названию (А-Я)" },
+  { value: "desc", label: "По названию (Я-А)" },
 ];
 
-const fac = {
-  id: 0,
-  name: "Экономика",
-  numid: "38.03.01",
-  type: "Бакалавриат",
-  subjects: ["rus", "math", "social"],
-  points: [
-    {
-      year: 2021,
-      score: 274,
-    },
-    {
-      year: 2020,
-      score: 255,
-    },
-    {
-      year: 2019,
-      score: 252,
-    },
-    {
-      year: 2018,
-      score: 245,
-    },
-  ],
-  number_of_places: [
-    {
-      year: 2021,
-      score: 4,
-    },
-    {
-      year: 2020,
-      score: 5,
-    },
-    {
-      year: 2019,
-      score: 0,
-    },
-    {
-      year: 2018,
-      score: null,
-    },
-  ],
-  cost: 108370,
-};
-
-const fac2 = {
-  id: 1,
-  name: "Фундаментальная информатика и информационные технологии",
-  numid: "02.03.02",
-  type: "Бакалавриат",
-  subjects: ["rus", "math", "ikt/phys"],
-  points: [
-    {
-      year: 2021,
-      score: 184,
-    },
-    {
-      year: 2020,
-      score: 184,
-    },
-    {
-      year: 2019,
-      score: 201,
-    },
-    {
-      year: 2018,
-      score: 186,
-    },
-  ],
-  number_of_places: [
-    {
-      year: 2021,
-      score: 50,
-    },
-    {
-      year: 2020,
-      score: 50,
-    },
-    {
-      year: 2019,
-      score: 29,
-    },
-    {
-      year: 2018,
-      score: null,
-    },
-  ],
-  cost: 108370,
-};
-
 const ResultsPage = ({
+  directions,
   subjects,
   score,
   search,
@@ -128,7 +39,7 @@ const ResultsPage = ({
               <Formik
                 onSubmit={() => {}}
                 initialValues={{
-                  filter: "title",
+                  filter: "asc",
                 }}
                 validationSchema={Yup.object({
                   filter: Yup.string().required("Filter is required"),
@@ -145,23 +56,22 @@ const ResultsPage = ({
                     component={SelectField}
                     options={options}
                     handleChange={onSelectChange}
-                    placeholder="Sort by"
+                    placeholder="Сортировка"
                     withLabel
                   />
                 </S.Form>
               </Formik>
             </S.SearchFilterWrapper>
             <S.FacultyList>
-              <Faculty
-                faculty={fac}
-                totalScore={score.totalScore}
-                subjects={subjects}
-              />
-              <Faculty
-                faculty={fac2}
-                totalScore={score.totalScore}
-                subjects={subjects}
-              />
+              {directions &&
+                directions.map((direction) => (
+                  <Faculty
+                    faculty={direction}
+                    totalScore={score.totalScore}
+                    subjects={subjects}
+                    key={direction.id}
+                  />
+                ))}
             </S.FacultyList>
           </S.Content>
         </>

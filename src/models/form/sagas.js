@@ -1,15 +1,17 @@
-// import { takeEvery, all, call, put } from "redux-saga/effects";
+import { takeEvery, all, call, put } from "redux-saga/effects";
+import { getDirectionsRequest } from "@api";
 
-// import { actions } from "./index";
+import { actions } from "./index";
 
-// function* createCard({ payload }) {
-//   try {
-//     // const response = yield call(createCardApi, payload);
-//   } catch (err) {
-//     yield console.error(err);
-//   }
-// }
+function* getDirections({payload}) {
+  try {
+    const response = yield call(getDirectionsRequest, payload);
+    yield put(actions.getDirectionsSuccess(response));
+  } catch (err) {
+    yield console.error(err);
+  }
+}
 
-// export default function* () {
-//   // yield all([takeEvery(actions.showResult.type, createCard)]);
-// }
+export default function* () {
+  yield all([takeEvery(actions.getDirections.type, getDirections)]);
+}

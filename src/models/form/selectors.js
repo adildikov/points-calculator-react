@@ -11,3 +11,8 @@ export const otherSelector = createSelector(
   rootSelector,
   (state) => state.other
 );
+
+export const directionsSelector = createSelector(
+  rootSelector,
+  state => state.directions
+)
