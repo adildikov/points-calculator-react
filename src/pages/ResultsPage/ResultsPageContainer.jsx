@@ -24,7 +24,6 @@ const ResultsPageContainer = () => {
   const [filter, setFilter] = useState("asc");
 
   useEffect(() => {
-    console.info(filter);
     if (filter === "chanceAsc" || filter === "chanceDesc") {
       getFilteredFacultiesChance({
         search,

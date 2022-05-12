@@ -44,7 +44,6 @@ const MainPageContainer = () => {
 
   const handleSetOther = useCallback(
     (payload) => {
-      console.info(payload);
       setOther(payload);
     },
     [setOther]
