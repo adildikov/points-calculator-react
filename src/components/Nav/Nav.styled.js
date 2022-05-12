@@ -47,7 +47,7 @@ export const Cross = styled.div`
   `}
 
   ${media.bigDesktop`
-    right: 300px;
+    right: 195px;
   `}
 `;
 
