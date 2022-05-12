@@ -11,6 +11,8 @@ import Faculty from "@components/Faculty/Faculty";
 const options = [
   { value: "asc", label: "По названию (А-Я)" },
   { value: "desc", label: "По названию (Я-А)" },
+  { value: "chanceAsc", label: "По возрастанию шанса" },
+  { value: "chanceDesc", label: "По убыванию шанса" },
 ];
 
 const ResultsPage = ({

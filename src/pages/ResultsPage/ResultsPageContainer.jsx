@@ -12,6 +12,9 @@ const ResultsPageContainer = () => {
   const directions = useSelector(directionsSelector);
   const otherResults = useSelector(otherSelector);
   const getDirections = useActionWithPayload(actions.getDirections);
+  const getFilteredFacultiesChance = useActionWithPayload(
+    actions.getFilteredFacultiesChance
+  );
   const [score, setScore] = useState({
     totalScore: 0,
     individual: 0,
@@ -21,8 +24,17 @@ const ResultsPageContainer = () => {
   const [filter, setFilter] = useState("asc");
 
   useEffect(() => {
-    getDirections({ search, filter });
-  }, [getDirections, search, filter]);
+    console.info(filter);
+    if (filter === "chanceAsc" || filter === "chanceDesc") {
+      getFilteredFacultiesChance({
+        search,
+        filter,
+        totalScore: score.totalScore,
+      });
+    } else {
+      getDirections({ search, filter });
+    }
+  }, [getDirections, search, filter, getFilteredFacultiesChance, score]);
 
   useEffect(() => {
     const examsScore = subjects.reduce((sum, subj) => sum + +subj.score, 0);

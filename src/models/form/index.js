@@ -50,7 +50,8 @@ const form = createSlice({
     getDirections: (state, { payload }) => state,
     getDirectionsSuccess(state, {payload}) {
       state.directions = payload;
-    }
+    },
+    getFilteredFacultiesChance: (state, {payload}) => state,
   },
 });
 
