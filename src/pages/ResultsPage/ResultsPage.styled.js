@@ -57,7 +57,7 @@ export const Form = styled(FormikForm)`
   margin-top: 20px;
 
   ${media.tablet`
-    width: 289px;
+    width: 360px;
     margin: 0px 0 0 35px;
   `}
 `;

@@ -44,7 +44,7 @@ const customStyles = {
     width: "100%",
     height: "64px",
     borderRadius: "16px",
-    padding: "22px 45px 17px 35px",
+    padding: "22px 45px 17px 15px",
     background:
       // eslint-disable-next-line no-nested-ternary
       state.selectProps.selectProps.background === "white"
@@ -99,7 +99,7 @@ const customStyles = {
       : "translateY(-50%)",
   }),
   dropdownIndicator: () => ({
-    color: Colors.mangoTango,
+    color: Colors.red,
   }),
   menu: () => ({
     background: Colors.white,

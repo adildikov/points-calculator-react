@@ -21,7 +21,7 @@ const ResultsPageContainer = () => {
     examsScore: 0,
   });
   const [search, setSearch] = useState("");
-  const [filter, setFilter] = useState("asc");
+  const [filter, setFilter] = useState("chanceAsc");
 
   useEffect(() => {
     if (filter === "chanceAsc" || filter === "chanceDesc") {
