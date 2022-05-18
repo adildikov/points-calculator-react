@@ -42,7 +42,9 @@ function* getFilteredFacultiesChance({payload}) {
   }
 }
 
-export default function* () {
+function* mainSagas () {
   yield all([takeEvery(actions.getDirections.type, getDirections)]);
   yield all([takeEvery(actions.getFilteredFacultiesChance.type, getFilteredFacultiesChance)]);
 }
+
+export default mainSagas
