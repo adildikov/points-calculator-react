@@ -5,7 +5,7 @@ import { subjectsaSelector, otherSelector } from "@models/form/selectors";
 import getIndividual from "@utils/getIndividual";
 import { actions } from "@models/form";
 import { directionsSelector } from "@models/form/selectors";
-import { useAction, useActionWithPayload } from "@hooks/useAction";
+import { useActionWithPayload } from "@hooks/useAction";
 
 const ResultsPageContainer = () => {
   const subjects = useSelector(subjectsaSelector);
@@ -36,7 +36,10 @@ const ResultsPageContainer = () => {
   }, [getDirections, search, filter, getFilteredFacultiesChance, score]);
 
   useEffect(() => {
-    const examsScore = subjects.reduce((sum, subj) => sum + +subj.score, 0);
+    const examsScore = [...subjects]
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .reduce((sum, subj) => sum + +subj.score, 0);
     const individual = getIndividual(otherResults);
     setScore({
       totalScore: examsScore + individual,

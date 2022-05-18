@@ -22,7 +22,6 @@ function* getFilteredFacultiesChance({payload}) {
     const faculties = [];
     response.forEach(faculty => {
       const { chance } = countChance(
-        payload.totalScore,
         faculty.points[0].score,
         countMean(faculty.points),
         faculty.number_of_places[0].score,

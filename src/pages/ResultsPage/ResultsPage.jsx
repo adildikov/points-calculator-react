@@ -41,7 +41,7 @@ const ResultsPage = ({
               <Formik
                 onSubmit={() => {}}
                 initialValues={{
-                  filter: "asc",
+                  filter: "chanceAsc",
                 }}
                 validationSchema={Yup.object({
                   filter: Yup.string().required("Filter is required"),

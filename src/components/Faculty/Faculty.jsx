@@ -8,10 +8,9 @@ import countMean from "@utils/countMean";
 import countChance from "@utils/countChance";
 import Graphic from "@components/Graphic";
 
-const Faculty = ({ faculty, totalScore, subjects }) => {
+const Faculty = ({ faculty, subjects }) => {
   const [isVisible, setVisible] = useToggle(false);
   const { chance, chancecolor, chanceText } = countChance(
-    totalScore,
     faculty.points[0].score,
     countMean(faculty.points),
     faculty.number_of_places[0].score,
