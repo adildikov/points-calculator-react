@@ -12,20 +12,3 @@ export const getDirectionsApi = (payload) => {
       throw new Error(err);
     });
 };
-
-export const editDirectionRequest = (apiUrl, id, data) => {
-  return fetch(apiUrl + `/${id}`, {
-    method: "PUT",
-    body: JSON.stringify(data),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((response) => {
-      if (!response.ok) throw new Error();
-      return response.json();
-    })
-    .catch((err) => {
-      throw new Error(err);
-    });
-};
