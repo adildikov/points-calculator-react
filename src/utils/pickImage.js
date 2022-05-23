@@ -1,14 +1,14 @@
-import rusIcon from '@images/subjectIcons/russian_icon.png';
-import mathIcon from '@images/subjectIcons/math_icon.png';
-import socialIcon from '@images/subjectIcons/social_icon.png';
-import engIcon from '@images/subjectIcons/eng_icon.png';
-import iktIcon from '@images/subjectIcons/ikt_icon.png';
-import bioIcon from '@images/subjectIcons/bio_icon.png';
-import geoIcon from '@images/subjectIcons/geo_icon.png';
-import chemIcon from '@images/subjectIcons/chem_icon.png';
-import physIcon from '@images/subjectIcons/physic_icon.png';
-import litrIcon from '@images/subjectIcons/liter_icon.png';
-import histIcon from '@images/subjectIcons/history_icon.png';
+import rusIcon from '@images/subjectIcons/russian_icon.svg';
+import mathIcon from '@images/subjectIcons/math_icon.svg';
+import socialIcon from '@images/subjectIcons/social_icon.svg';
+import engIcon from '@images/subjectIcons/eng_icon.svg';
+import iktIcon from '@images/subjectIcons/ikt_icon.svg';
+import bioIcon from '@images/subjectIcons/bio_icon.svg';
+import geoIcon from '@images/subjectIcons/geo_icon.svg';
+import chemIcon from '@images/subjectIcons/chem_icon.svg';
+import physIcon from '@images/subjectIcons/physic_icon.svg';
+import litrIcon from '@images/subjectIcons/liter_icon.svg';
+import histIcon from '@images/subjectIcons/history_icon.svg';
 
 
 const pickImage = (title) => {
