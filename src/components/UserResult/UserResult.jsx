@@ -4,7 +4,7 @@ import useWindowResize from "@hooks/useWindowResize";
 import { Viewport } from "@styles/media";
 import getSubjectName from "@utils/getSubjectName";
 
-const UserResult = ({ score, exams }) => {
+const UserResult = ({ score, exams, passedDirectionas }) => {
   const { width: windowWidth } = useWindowResize();
   const isTablet = windowWidth <= Viewport.tablet;
   return (
@@ -53,9 +53,13 @@ const UserResult = ({ score, exams }) => {
                 )}
               </S.ExamCol>
             </S.ExamList>
-            <S.BlueText mt={40}>
-              Высокий шанс поступить на более чем 3 технических направления
-            </S.BlueText>
+            {passedDirectionas > 0 && (
+              <S.BlueText mt={40}>
+                {`Высокий шанс поступить на ${
+                  passedDirectionas > 3 ? "3+" : passedDirectionas
+                } ${passedDirectionas === 1 ? "направление" : "направления"}`}
+              </S.BlueText>
+            )}
             <S.RedText mt={30}>
               Ваши баллы выше чем 70% поступивших в прошлом году
             </S.RedText>

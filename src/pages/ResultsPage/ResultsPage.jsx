@@ -22,12 +22,17 @@ const ResultsPage = ({
   search,
   setSearch,
   onSelectChange,
+  passedDirectionas,
 }) => {
   return (
     <S.Root>
       {subjects.length > 0 ? (
         <>
-          <UserResult exams={subjects} score={score} />
+          <UserResult
+            exams={subjects}
+            score={score}
+            passedDirectionas={passedDirectionas}
+          />
           <S.Content>
             <S.Title>Предложенные направления</S.Title>
             <S.SearchFilterWrapper>

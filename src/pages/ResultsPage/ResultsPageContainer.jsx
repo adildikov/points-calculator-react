@@ -15,6 +15,7 @@ const ResultsPageContainer = () => {
   const getFilteredFacultiesChance = useActionWithPayload(
     actions.getFilteredFacultiesChance
   );
+  const [passedDirectionas, setPassedDirections] = useState(0);
   const [score, setScore] = useState({
     totalScore: 0,
     individual: 0,
@@ -49,6 +50,16 @@ const ResultsPageContainer = () => {
   }, [otherResults, subjects]);
 
   useEffect(() => {
+    let counter = 0;
+    directions.forEach((direction) => {
+      if (direction.chance >= 95) {
+        counter += 1;
+      }
+    });
+    setPassedDirections(counter);
+  }, [setPassedDirections, directions]);
+
+  useEffect(() => {
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   }, []);
 
@@ -66,6 +77,7 @@ const ResultsPageContainer = () => {
       search={search}
       setSearch={setSearch}
       onSelectChange={handleSelectChange}
+      passedDirectionas={passedDirectionas}
     />
   );
 };
