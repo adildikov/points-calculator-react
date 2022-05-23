@@ -107,6 +107,10 @@ export const BlueText = styled(Text)`
   color: ${Colors.blue};
 `;
 
+export const GreenText = styled(Text)`
+  color: ${Colors.green};
+`;
+
 export const RedText = styled(Text)`
   color: ${Colors.red};
 `;

@@ -54,15 +54,15 @@ const UserResult = ({ score, exams, passedDirectionas }) => {
               </S.ExamCol>
             </S.ExamList>
             {passedDirectionas > 0 && (
-              <S.BlueText mt={40}>
+              <S.GreenText mt={40}>
                 {`Высокий шанс поступить на ${
                   passedDirectionas > 3 ? "3+" : passedDirectionas
                 } ${passedDirectionas === 1 ? "направление" : "направления"}`}
-              </S.BlueText>
+              </S.GreenText>
             )}
-            <S.RedText mt={30}>
+            {/* <S.RedText mt={30}>
               Ваши баллы выше чем 70% поступивших в прошлом году
-            </S.RedText>
+            </S.RedText> */}
           </S.InfoBlock>
         </S.MainResult>
       </S.Content>
