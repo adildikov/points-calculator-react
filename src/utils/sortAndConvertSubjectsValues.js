@@ -1,4 +1,4 @@
-const subjNames = ["rus", "math", "ikt", "social", "eng", "bio", "geo", "chem", "phys", "litr", "hist"];
+const subjNames = ["rus", "math", "ikt", "social", "eng", "bio", "geo", "chem", "phys", "litr", "hist", "creative"];
 
 const sortAndConvertSubjectsValues = (values) => {
   return Object.entries(values)

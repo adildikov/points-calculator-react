@@ -22,6 +22,8 @@ const getSubjectName = (name) => {
       return "Литература";
     case "hist":
       return "История";
+    case "creative":
+      return "Испытание";
     default:
       return "Предмет";
   }

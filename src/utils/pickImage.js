@@ -9,6 +9,7 @@ import chemIcon from '@images/subjectIcons/chem_icon.svg';
 import physIcon from '@images/subjectIcons/physic_icon.svg';
 import litrIcon from '@images/subjectIcons/liter_icon.svg';
 import histIcon from '@images/subjectIcons/history_icon.svg';
+import creativeIcon from '@images/subjectIcons/creative_icon.svg';
 
 
 const pickImage = (title) => {
@@ -35,6 +36,8 @@ const pickImage = (title) => {
       return litrIcon;
     case "История":
       return histIcon;
+    case "Испытание":
+      return creativeIcon;
     default:
       return rusIcon;
   }

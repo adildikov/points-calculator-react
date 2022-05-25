@@ -35,6 +35,7 @@ const MainPage = ({ data, onSetOther, gto, onSetSubjects, resetData }) => {
             phys: getInitialForSubject(data, "phys"),
             litr: getInitialForSubject(data, "litr"),
             hist: getInitialForSubject(data, "hist"),
+            creative: getInitialForSubject(data, "creative"),
             fullTime: data.studyForm.fullTime || false,
             partTime: data.studyForm.partTime || false,
             fullPartTime: data.studyForm.fullPartTime || false,
@@ -42,8 +43,8 @@ const MainPage = ({ data, onSetOther, gto, onSetSubjects, resetData }) => {
             volunteering: data.other.volunteering || false,
           }}
           validationSchema={Yup.object({
-            rus: Yup.number().required().min(1).max(100),
-            math: Yup.number().required().min(1).max(100),
+            rus: Yup.number().max(100),
+            math: Yup.number().max(100),
             ikt: Yup.number().max(100),
             social: Yup.number().max(100),
             eng: Yup.number().max(100),
@@ -53,6 +54,7 @@ const MainPage = ({ data, onSetOther, gto, onSetSubjects, resetData }) => {
             phys: Yup.number().max(100),
             litr: Yup.number().max(100),
             hist: Yup.number().max(100),
+            creative: Yup.number().max(100),
             fullTime: Yup.boolean(),
             partTime: Yup.boolean(),
             fullPartTime: Yup.boolean(),
@@ -131,9 +133,15 @@ const MainPage = ({ data, onSetOther, gto, onSetSubjects, resetData }) => {
                   name="hist"
                   onChange={handleChange}
                 />
+                <SubjectInput
+                  title="Испытание"
+                  value={values.creative}
+                  name="creative"
+                  onChange={handleChange}
+                />
               </S.InputsBlock>
-              <S.SubTitle mt={40}>Форма обучения</S.SubTitle>
-              <S.TogglesBlock>
+              {/* <S.SubTitle mt={40}>Форма обучения</S.SubTitle> */}
+              {/* <S.TogglesBlock>
                 <Toggle
                   name="fullTime"
                   text="Очная"
@@ -157,7 +165,7 @@ const MainPage = ({ data, onSetOther, gto, onSetSubjects, resetData }) => {
                   isActive={values.fullPartTime}
                   setActive={handleChange}
                 />
-              </S.TogglesBlock>
+              </S.TogglesBlock> */}
               <S.SubTitle mt={30}>Укажите индивидуальные достижения</S.SubTitle>
               <S.TogglesBlock>
                 <Toggle
