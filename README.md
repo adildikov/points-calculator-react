@@ -1,3 +1,6 @@
+# Link to Figma Disign
+[Disign file](https://www.figma.com/file/NJ0BeRlmEo1hg5WJgieWZN/TSU-Calculator?node-id=0%3A1)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
